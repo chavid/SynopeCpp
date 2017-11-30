@@ -1,4 +1,4 @@
-# [Opérateurs](TheorieExceptionsOperateurs "wikilink")
+# [Opérateurs](TheorieExceptionsOperateurs.md)
 
 \_\_FORCETOC\_\_
 

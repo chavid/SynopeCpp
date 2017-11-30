@@ -1,9 +1,9 @@
-# [Entrées/sorties standards](TheorieClassique "wikilink")
+# [Entrées/sorties standards](TheorieClassique.md)
 
 \_\_FORCETOC\_\_
 
 Le C++ standard comprend une bibliothèque d'entrées/sorties qui spécifie une interface commune pour tous les échanges de données avec l'extérieur, reposant notamment sur les opérateurs d'insertion \<\< et d'extraction \>\>.  
-Accès à la [section correspondante des travaux pratiques](TpEntreesSortiesStandards "wikilink").
+Accès à la [section correspondante des travaux pratiques](TpEntreesSortiesStandards.md).
 
 ## Canaux prédéfinis
 

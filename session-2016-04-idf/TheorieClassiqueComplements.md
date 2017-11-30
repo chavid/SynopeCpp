@@ -1,4 +1,4 @@
-# [Compléments](TheorieClassique "wikilink")
+# [Compléments](TheorieClassique.md)
 
 \_\_FORCETOC\_\_
 

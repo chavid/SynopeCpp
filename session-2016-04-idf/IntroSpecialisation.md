@@ -1,4 +1,4 @@
-# [Spécialisations de templates](TheorieGenerique "wikilink")
+# [Spécialisations de templates](TheorieGenerique.md)
 
 \_\_FORCETOC\_\_
 

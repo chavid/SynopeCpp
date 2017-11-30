@@ -1,4 +1,4 @@
-# [Compléments de programmation générique](TheorieGenerique "wikilink")
+# [Compléments de programmation générique](TheorieGenerique.md)
 
 \_\_FORCETOC\_\_
 

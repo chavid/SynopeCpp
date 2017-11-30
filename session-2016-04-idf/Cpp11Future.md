@@ -1,4 +1,4 @@
-# [Récupérer les résultats d'un processus léger : future & promise](TheorieFonctionnelleConcurrente "wikilink")
+# [Récupérer les résultats d'un processus léger : future & promise](TheorieFonctionnelleConcurrente.md)
 
 C++11 offre quelques moyens de transmettre des informations entre threads sans avoir à passer par des données partagées et un mécanisme de synchronisation manuel.
 

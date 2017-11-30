@@ -1,4 +1,4 @@
-# [Support de C++11/14 par les compilateurs](README.md "wikilink")
+# [Support de C++11/14 par les compilateurs](README.md.md)
 
 ## Clang
 

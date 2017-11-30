@@ -1,8 +1,8 @@
-# [TP : Entrées/Sorties Standards](README.md "wikilink") \[\#license ©\]
+# [TP : Entrées/Sorties Standards](README.md.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 
-Le C++ standard comprend une bibliothèque d'entrées/sorties qui spécifie une interface commune pour tous les échanges de données avec l'extérieur, reposant notamment sur les opérateurs d'insertion \<\< et d'extraction \>\>.\\\\ Il est conseillé de partir du fichier [tp7\_exceptions.cpp](coefs-old/tp7_exceptions.cpp "wikilink"). Si vous êtes sous linux, vous pouvez utilisez le script [tp7\_exceptions.sh](coefs-old/tp7_exceptions.sh "wikilink") qui va compiler le programme, l'éxécuter et vérifier que l'affichage ne change pas.\\\\ Accès à la [section théorique correspondante](ComplementEntreesSortiesStandards "wikilink").
+Le C++ standard comprend une bibliothèque d'entrées/sorties qui spécifie une interface commune pour tous les échanges de données avec l'extérieur, reposant notamment sur les opérateurs d'insertion \<\< et d'extraction \>\>.\\\\ Il est conseillé de partir du fichier [tp7\_exceptions.cpp](coefs-old/tp7_exceptions.cpp.md). Si vous êtes sous linux, vous pouvez utilisez le script [tp7\_exceptions.sh](coefs-old/tp7_exceptions.sh.md) qui va compiler le programme, l'éxécuter et vérifier que l'affichage ne change pas.\\\\ Accès à la [section théorique correspondante](ComplementEntreesSortiesStandards.md).
 
 ## 1\)
 

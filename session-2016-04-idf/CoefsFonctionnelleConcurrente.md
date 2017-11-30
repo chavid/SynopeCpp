@@ -1,10 +1,10 @@
-# [TP Coefs : Programmation fonctionnelle et concurrente](README.md "wikilink")
+# [TP Coefs : Programmation fonctionnelle et concurrente](README.md.md)
 
 \_\_FORCETOC\_\_
 
 Nous allons à nouveau utiliser notre code testant beaucoup de coefficients aléatoires, en augmentant sensiblement le nombre d'itérations pour allonger les temps de calcul. Nous essaierons ensuite d'exécuter nos testeurs en parallèle.
 
-Partez du fichier [tp6\_parallele\_etape00.cpp](https://github.com/ReseauDevlog/SynopeCpp/raw/master/session-2016-04-idf/coefs/tp6_parallele_etape00.cpp).\\\\ Accès à la [section théorique correspondante](TheorieFonctionnelleConcurrente "wikilink").
+Partez du fichier [tp6\_parallele\_etape00.cpp](https://github.com/ReseauDevlog/SynopeCpp/raw/master/session-2016-04-idf/coefs/tp6_parallele_etape00.cpp).\\\\ Accès à la [section théorique correspondante](TheorieFonctionnelleConcurrente.md).
 
 ## 1\) Inférence de type
 

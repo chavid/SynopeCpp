@@ -1,4 +1,4 @@
-# [Variables de threads](TheorieFonctionnelleConcurrente "wikilink") (`thread_local`)
+# [Variables de threads](TheorieFonctionnelleConcurrente.md) (`thread_local`)
 
 ## Motivation
 

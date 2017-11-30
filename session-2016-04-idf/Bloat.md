@@ -1,4 +1,4 @@
-# [Factoriser le code indépendant des paramètres](TheorieGenerique "wikilink")
+# [Factoriser le code indépendant des paramètres](TheorieGenerique.md)
 
 Les patrons constituent un outil puissant, mais en simplifiant et au automatisant le copier-coller, il peuvent favoriser une duplication invisible mais foisonnante de portions de code et de données, et conduire à des fichiers exécutables de très/trop grande taille. On parle alors de "code bloat".
 

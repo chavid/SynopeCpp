@@ -1,4 +1,4 @@
-# [Constantes](TheorieGenerique "wikilink")
+# [Constantes](TheorieGenerique.md)
 
 \_\_FORCETOC\_\_
 

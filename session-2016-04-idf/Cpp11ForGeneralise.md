@@ -1,4 +1,4 @@
-# [For généralisé](TheorieFonctionnelleConcurrente "wikilink")
+# [For généralisé](TheorieFonctionnelleConcurrente.md)
 
 La plupart des boucles d'un programme parcourent tous les éléments d'une collection. Pour simplifier ce cas d'utilisation, C++ 11 introduit une nouvelle syntaxe qui fait office de raccourcit sur la manière basique de parcourir un tableau ordinaire ou une collection de la bibliothèque standard à l'aide d'appels à `begin()` et à `end()`.
 

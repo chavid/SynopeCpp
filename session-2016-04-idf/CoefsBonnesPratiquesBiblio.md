@@ -1,10 +1,10 @@
-# [TP Coefs : Bonnes pratiques & bibliothèque standard](README.md "wikilink")
+# [TP Coefs : Bonnes pratiques & bibliothèque standard](README.md.md)
 
 \_\_FORCETOC\_\_
 
 Dans cette séquence du TP, on a volontairement enlever le traitement des erreurs et réduit le nombre de testeurs pour alléger le code. Par ailleurs, pour mieux évaluer les approximations du calcul, on réalise les tests sur 1000 coefficients tirés aléatoirement.
 
-Partez du fichier [tp5\_biblio\_etape00.cpp](https://github.com/ReseauDevlog/SynopeCpp/raw/master/session-2016-04-idf/coefs/tp5_biblio_etape00.cpp).\\\\ Accès à la [section théorique correspondante](TheorieBonnesPratiquesBiblio "wikilink").
+Partez du fichier [tp5\_biblio\_etape00.cpp](https://github.com/ReseauDevlog/SynopeCpp/raw/master/session-2016-04-idf/coefs/tp5_biblio_etape00.cpp).\\\\ Accès à la [section théorique correspondante](TheorieBonnesPratiquesBiblio.md).
 
 ## 1\) Utilisation de `std::vector`
 

@@ -1,4 +1,4 @@
-# [Types prédéfinis](TheorieClassique "wikilink")
+# [Types prédéfinis](TheorieClassique.md)
 
 \_\_FORCETOC\_\_
 

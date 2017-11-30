@@ -1,4 +1,4 @@
-# [Variables](TheorieClassique "wikilink")
+# [Variables](TheorieClassique.md)
 
 \_\_FORCETOC\_\_
 

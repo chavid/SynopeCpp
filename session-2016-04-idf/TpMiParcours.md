@@ -1,8 +1,8 @@
-# [TP : Mi-Parcours](README.md "wikilink") \[\#license ©\]
+# [TP : Mi-Parcours](README.md.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 
-Bravo, vous avez survécu à la première moitié du TP \! A ce stade, la solution se trouve dans le fichier [tp4\_operateurs\_templates.cpp](coefs-old/tp4_operateurs_templates.cpp "wikilink"). Si vous êtes sous linux, vous pouvez utilisez le script [tp4\_operateurs\_templates.sh](coefs-old/tp4_operateurs_templates.sh "wikilink") qui va compiler le programme et l'éxécuter.
+Bravo, vous avez survécu à la première moitié du TP \! A ce stade, la solution se trouve dans le fichier [tp4\_operateurs\_templates.cpp](coefs-old/tp4_operateurs_templates.cpp.md). Si vous êtes sous linux, vous pouvez utilisez le script [tp4\_operateurs\_templates.sh](coefs-old/tp4_operateurs_templates.sh.md) qui va compiler le programme et l'éxécuter.
 
 ## \*) Question bonus
 

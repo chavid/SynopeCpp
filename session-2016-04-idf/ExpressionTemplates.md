@@ -1,4 +1,4 @@
-# [Expressions à base de patrons](TheorieGenerique "wikilink")
+# [Expressions à base de patrons](TheorieGenerique.md)
 
 ## Motivation
 

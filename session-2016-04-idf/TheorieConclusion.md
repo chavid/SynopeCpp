@@ -1,4 +1,4 @@
-# [Conclusion](README.md "wikilink")
+# [Conclusion](README.md.md)
 
 ## Morale
 

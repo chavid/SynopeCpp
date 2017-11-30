@@ -1,4 +1,4 @@
-# [Métaprogrammation en C++11/14](TheorieGenerique "wikilink")
+# [Métaprogrammation en C++11/14](TheorieGenerique.md)
 
 ## Calcul de valeurs
 

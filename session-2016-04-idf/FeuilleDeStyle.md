@@ -1,4 +1,4 @@
-# [Le titre général](README.md "wikilink") \[\#license ©\]
+# [Le titre général](README.md.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 
@@ -6,12 +6,12 @@
 
 #### Sous-section
 
-  - [Bonnes pratiques C++03 : bases.](BpBases "wikilink")
-  - [Nouveautés C++11 : petites nouveautés pratiques.](Cpp11Sucre "wikilink")
+  - [Bonnes pratiques C++03 : bases.](BpBases.md)
+  - [Nouveautés C++11 : petites nouveautés pratiques.](Cpp11Sucre.md)
 
 #### Mot réservé `machin`
 
-  - [Nouveautés C++11 : inférence de types.](Cpp11Inference "wikilink") \[\#license ©\]
+  - [Nouveautés C++11 : inférence de types.](Cpp11Inference.md) \[\#license ©\]
 
 ## Section sur les exemples
 
@@ -24,7 +24,7 @@ Style extrait simple
       return 0 ;
      }
 
-Style spécifique C++ (et une image à droite) : [Image(debuter-en-cpp-banner.v.png,right,width=71ppx)](Image\(debuter-en-cpp-banner.v.png,right,width=71ppx\) "wikilink")
+Style spécifique C++ (et une image à droite) : [Image(debuter-en-cpp-banner.v.png,right,width=71ppx)](Image\(debuter-en-cpp-banner.v.png,right,width=71ppx\).md)
 
 ``` cpp
 #include <iostream>

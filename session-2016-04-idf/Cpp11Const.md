@@ -1,4 +1,4 @@
-# [Extension des expressions constantes](TheorieGenerique "wikilink")
+# [Extension des expressions constantes](TheorieGenerique.md)
 
 ## Les expressions constantes de C++03
 

@@ -1,4 +1,4 @@
-# [Petites nouveautés diverses](TheorieGenerique "wikilink")
+# [Petites nouveautés diverses](TheorieGenerique.md)
 
 ## \<\< et \>\>
 

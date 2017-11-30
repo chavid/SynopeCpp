@@ -1,8 +1,8 @@
-# [TP : Héritage & Polymorphisme](README.md "wikilink") \[\#license ©\]
+# [TP : Héritage & Polymorphisme](README.md.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 
-Maintenant, les concepts qui font de C++ un langage "orienté objet".\\\\ Il est conseillé de partir du fichier [tp2\_classes\_objets.cpp](coefs-old/tp2_classes_objets.cpp "wikilink"). Si vous êtes sous linux, vous pouvez utilisez le script [tp2\_classes\_objets.sh](coefs-old/tp2_classes_objets.sh "wikilink") qui va compiler le programme, l'éxécuter et finalement signaler si ses affichages ont été modifiés.\\\\ Accès à la [section théorique correspondante](FondamentauxHeritagePolymorphisme "wikilink").
+Maintenant, les concepts qui font de C++ un langage "orienté objet".\\\\ Il est conseillé de partir du fichier [tp2\_classes\_objets.cpp](coefs-old/tp2_classes_objets.cpp.md). Si vous êtes sous linux, vous pouvez utilisez le script [tp2\_classes\_objets.sh](coefs-old/tp2_classes_objets.sh.md) qui va compiler le programme, l'éxécuter et finalement signaler si ses affichages ont été modifiés.\\\\ Accès à la [section théorique correspondante](FondamentauxHeritagePolymorphisme.md).
 
 ## 1\) Création du Testeur de base
 

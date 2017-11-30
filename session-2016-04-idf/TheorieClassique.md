@@ -1,20 +1,20 @@
-# [Programmation procédurale](README.md "wikilink")
+# [Programmation procédurale](README.md.md)
 
-* [Variables, initialisation, affectation.](TheorieClassiqueVariables "wikilink")
-* [Types prédéfinis.](TheorieClassiqueTypes "wikilink")
-* [Instructions courantes.](TheorieClassiqueInstructions "wikilink")
-* [Fonctions.](TheorieClassiqueFonctions "wikilink")
-* *[(questions 1 à 9)](CoefsClassique "wikilink")*
-
-  
-
-* [Variables et tableaux sur le tas.](TheorieClassiqueNewDelete "wikilink")
-* [Entrées/sorties standards.](ComplementEntreesSortiesStandards "wikilink")
-* *[(questions 10 & 11)](CoefsClassique#a10Cr%C3%A9ationdetableauxdynamiques "wikilink")*
+* [Variables, initialisation, affectation.](TheorieClassiqueVariables.md)
+* [Types prédéfinis.](TheorieClassiqueTypes.md)
+* [Instructions courantes.](TheorieClassiqueInstructions.md)
+* [Fonctions.](TheorieClassiqueFonctions.md)
+* *[(questions 1 à 9)](CoefsClassique.md)*
 
   
 
-* [Compléments](TheorieClassiqueComplements "wikilink")
+* [Variables et tableaux sur le tas.](TheorieClassiqueNewDelete.md)
+* [Entrées/sorties standards.](ComplementEntreesSortiesStandards.md)
+* *[(questions 10 & 11)](CoefsClassique#a10Cr%C3%A9ationdetableauxdynamiques.md)*
+
+  
+
+* [Compléments](TheorieClassiqueComplements.md)
 
   
   

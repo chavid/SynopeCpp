@@ -1,8 +1,8 @@
-# [TP : Tableaux, Pointeurs & Gestion du Tas](README.md "wikilink") \[\#license ©\]
+# [TP : Tableaux, Pointeurs & Gestion du Tas](README.md.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 
-En C++, on peut contrôler finement le cycle de vie des objets et gérer la mémoire qui leur est allouée. C'est ce qui permet de réaliser des applications plus performantes qu'avec d'autres langages, mais c'est aussi la source d'erreurs principale du langage. Pointeurs et gestion dynamique de la mémoire : attention danger \! \\\\ Il est conseillé de partir du fichier [tp4\_operateurs\_templates.cpp](coefs-old/tp4_operateurs_templates.cpp "wikilink"). Si vous êtes sous linux, vous pouvez utilisez le script [tp4\_operateurs\_templates.sh](coefs-old/tp4_operateurs_templates.sh "wikilink") qui va compiler le programme et l'éxécuter.\\\\ Accès à la [section théorique correspondante](ComplementTableauxPointeursTas "wikilink").
+En C++, on peut contrôler finement le cycle de vie des objets et gérer la mémoire qui leur est allouée. C'est ce qui permet de réaliser des applications plus performantes qu'avec d'autres langages, mais c'est aussi la source d'erreurs principale du langage. Pointeurs et gestion dynamique de la mémoire : attention danger \! \\\\ Il est conseillé de partir du fichier [tp4\_operateurs\_templates.cpp](coefs-old/tp4_operateurs_templates.cpp.md). Si vous êtes sous linux, vous pouvez utilisez le script [tp4\_operateurs\_templates.sh](coefs-old/tp4_operateurs_templates.sh.md) qui va compiler le programme et l'éxécuter.\\\\ Accès à la [section théorique correspondante](ComplementTableauxPointeursTas.md).
 
 ## 1\) Foncteur
 

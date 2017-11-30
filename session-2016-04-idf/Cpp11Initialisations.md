@@ -1,4 +1,4 @@
-# [C++11 : initialisation uniforme ?](TheorieClassique "wikilink")
+# [C++11 : initialisation uniforme ?](TheorieClassique.md)
 
 ## Motivation : multiplicité des syntaxes d'initialisation
 

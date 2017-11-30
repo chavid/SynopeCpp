@@ -1,4 +1,4 @@
-# [Construction & destruction](TheorieObjets "wikilink")
+# [Construction & destruction](TheorieObjets.md)
 
 \_\_FORCETOC\_\_
 

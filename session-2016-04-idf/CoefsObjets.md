@@ -1,10 +1,10 @@
-# [TP Coefs : Programmation Orientée Objet](README.md "wikilink")
+# [TP Coefs : Programmation Orientée Objet](README.md.md)
 
 \_\_FORCETOC\_\_
 
 Ici, on revoit le code pour y introduire des objets et des classes.  
 Il est conseillé de partir du fichier [tp2\_objets\_etape00.cpp](https://github.com/ReseauDevlog/SynopeCpp/raw/master/session-2016-04-idf/coefs/tp2_objets_etape00.cpp).  
-Accès à la [section théorique correspondante](TheorieObjets "wikilink").
+Accès à la [section théorique correspondante](TheorieObjets.md).
 
 ## 1\) Regroupement du numérateur et de l'exposant associé dans une classe Coef
 

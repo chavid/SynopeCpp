@@ -1,4 +1,4 @@
-# [Marqueurs et traits](TheorieGenerique "wikilink")
+# [Marqueurs et traits](TheorieGenerique.md)
 
 ## Motivation
 

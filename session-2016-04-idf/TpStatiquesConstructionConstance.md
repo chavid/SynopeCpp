@@ -1,8 +1,8 @@
-# [TP : Statiques, Construction & Constantes](README.md "wikilink") \[\#license ©\]
+# [TP : Statiques, Construction & Constantes](README.md.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 
-Il est conseillé de partir du fichier [tp5\_pointeurs.cpp](coefs-old/tp5_pointeurs.cpp "wikilink"). Si vous êtes sous linux, vous pouvez utilisez le script [tp5\_pointeurs.sh](coefs-old/tp5_pointeurs.sh "wikilink") qui va compiler le programme, l'éxécuter et vérifier que l'affichage ne change pas.\\\\ Accès à la [section théorique correspondante](ComplementStatiquesConstructionConstance "wikilink").
+Il est conseillé de partir du fichier [tp5\_pointeurs.cpp](coefs-old/tp5_pointeurs.cpp.md). Si vous êtes sous linux, vous pouvez utilisez le script [tp5\_pointeurs.sh](coefs-old/tp5_pointeurs.sh.md) qui va compiler le programme, l'éxécuter et vérifier que l'affichage ne change pas.\\\\ Accès à la [section théorique correspondante](ComplementStatiquesConstructionConstance.md).
 
 ## 1\) Variables membres statiques
 

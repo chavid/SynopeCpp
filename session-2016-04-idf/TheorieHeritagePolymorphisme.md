@@ -1,4 +1,4 @@
-# [Héritage & polymorphisme](TheorieObjets "wikilink")
+# [Héritage & polymorphisme](TheorieObjets.md)
 
 \_\_FORCETOC\_\_
 

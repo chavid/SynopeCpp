@@ -1,4 +1,4 @@
-# [Patrons (templates)](TheorieGenerique "wikilink")
+# [Patrons (templates)](TheorieGenerique.md)
 
 \_\_FORCETOC\_\_
 

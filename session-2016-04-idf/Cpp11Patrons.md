@@ -1,4 +1,4 @@
-# [Patrons à nombre de paramètres variables (patrons variadiques)](TheorieGenerique "wikilink")
+# [Patrons à nombre de paramètres variables (patrons variadiques)](TheorieGenerique.md)
 
 ## Definition d'un patron de classe variadique
 

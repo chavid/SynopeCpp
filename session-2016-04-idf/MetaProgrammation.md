@@ -1,4 +1,4 @@
-# [Principes généraux de métaprogrammation](TheorieGenerique "wikilink")
+# [Principes généraux de métaprogrammation](TheorieGenerique.md)
 
 ## Motivation
 

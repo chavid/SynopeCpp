@@ -5,22 +5,22 @@ Où l'on essaie d'entrer en contact avec les grands principes du langage, sans e
   - [Introduction](TheorieIntroduction.md)
   - [Programmation procédurale](TheorieClassique.md)
   - [Programmation orientée objet](TheorieObjets.md)
-  - [Exceptions & opérateurs](TheorieExceptionsOperateurs "wikilink")
-  - [Programmation générique](TheorieGenerique "wikilink")
-  - [Bonnes pratiques & bibliothèque standard](TheorieBonnesPratiquesBiblio "wikilink")
-  - [Programmation fonctionnelle & concurrente](TheorieFonctionnelleConcurrente "wikilink")
-  - [Conclusion](TheorieConclusion "wikilink")
+  - [Exceptions & opérateurs](TheorieExceptionsOperateurs.md)
+  - [Programmation générique](TheorieGenerique.md)
+  - [Bonnes pratiques & bibliothèque standard](TheorieBonnesPratiquesBiblio.md)
+  - [Programmation fonctionnelle & concurrente](TheorieFonctionnelleConcurrente.md)
+  - [Conclusion](TheorieConclusion.md)
 
 ## Pratique
 
 Dans ces travaux pratiques, on s'intéresse à l'approximation de coefficients réels par des rapports d'entiers. On essaie de calculer l'erreur d'approximation commise en calculant la somme pondérée 0.65\*3515+0.35\*4832 (choisie arbitrairement), et ceci en fonction du nombre de bits disponible pour stocker ces nombres. Sous ce prétexte, nous construirons une série de classes pour représenter les coefficients et une autre série de classes pour les tester.
 
-  - [TP Coefs : Programmation procédurale](CoefsClassique "wikilink")
-  - [TP Coefs : Programmation orientée objet](CoefsObjets "wikilink")
-  - [TP Coefs : Exceptions & opérateurs](CoefsExceptionsOperateurs "wikilink")
-  - [TP Coefs : Programmation générique](CoefsGenerique "wikilink")
-  - [TP Coefs : Bonnes pratiques & bibliothèque standard](CoefsBonnesPratiquesBiblio "wikilink")
-  - [TP Coefs : Programmation fonctionnelle & concurrente](CoefsFonctionnelleConcurrente "wikilink")
+  - [TP Coefs : Programmation procédurale](CoefsClassique.md)
+  - [TP Coefs : Programmation orientée objet](CoefsObjets.md)
+  - [TP Coefs : Exceptions & opérateurs](CoefsExceptionsOperateurs.md)
+  - [TP Coefs : Programmation générique](CoefsGenerique.md)
+  - [TP Coefs : Bonnes pratiques & bibliothèque standard](CoefsBonnesPratiquesBiblio.md)
+  - [TP Coefs : Programmation fonctionnelle & concurrente](CoefsFonctionnelleConcurrente.md)
 
 ## Ressources extérieures
 

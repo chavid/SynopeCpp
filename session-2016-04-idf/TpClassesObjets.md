@@ -1,8 +1,8 @@
-# [TP : Classes & Objets](README.md "wikilink")
+# [TP : Classes & Objets](README.md.md)
 
 \_\_FORCETOC\_\_
 
-Ici, on revoit le code pour y introduire des objets et des classes. Aucune des modifications effectuées dans cette page n'est censée modifier les affichages du programme.\\\\ Il est conseillé de partir du fichier [tp1\_variables\_fonctions.cpp](coefs-old/tp1_variables_fonctions.cpp "wikilink"). Si vous êtes sous linux, vous pouvez utilisez le script [tp1\_variables\_fonctions.sh](coefs-old/tp1_variables_fonctions.sh "wikilink") qui va compiler le programme, l'éxécuter et finalement signaler si ses affichages ont été modifiés. Pour préparer les affichages qui serviront de référence, éxécutez le script une première fois et tapez `cp tp1_variables_fonctions.log tp1_variables_fonctions.ref`.\\\\ Accès à la [section théorique correspondante](FondamentauxClassesObjets "wikilink").
+Ici, on revoit le code pour y introduire des objets et des classes. Aucune des modifications effectuées dans cette page n'est censée modifier les affichages du programme.\\\\ Il est conseillé de partir du fichier [tp1\_variables\_fonctions.cpp](coefs-old/tp1_variables_fonctions.cpp.md). Si vous êtes sous linux, vous pouvez utilisez le script [tp1\_variables\_fonctions.sh](coefs-old/tp1_variables_fonctions.sh.md) qui va compiler le programme, l'éxécuter et finalement signaler si ses affichages ont été modifiés. Pour préparer les affichages qui serviront de référence, éxécutez le script une première fois et tapez `cp tp1_variables_fonctions.log tp1_variables_fonctions.ref`.\\\\ Accès à la [section théorique correspondante](FondamentauxClassesObjets.md).
 
 ## 1\) Regroupement du numérateur et de l'exposant associé dans une classe Coef
 

@@ -1,4 +1,4 @@
-# [Fonctions](TheorieClassique "wikilink")
+# [Fonctions](TheorieClassique.md)
 
 \_\_FORCETOC\_\_
 

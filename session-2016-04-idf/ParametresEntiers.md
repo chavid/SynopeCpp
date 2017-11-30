@@ -1,4 +1,4 @@
-# [Paramètres entiers](TheorieGenerique "wikilink")
+# [Paramètres entiers](TheorieGenerique.md)
 
 \_\_FORCETOC\_\_
 

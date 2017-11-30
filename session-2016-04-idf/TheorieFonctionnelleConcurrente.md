@@ -1,4 +1,4 @@
-# [Programmation fonctionnelle et concurrente](README.md "wikilink")
+# [Programmation fonctionnelle et concurrente](README.md.md)
 
 ## Introduction
 
@@ -17,22 +17,22 @@ Simultanément, le langage C++ évolue lui aussi pour mieux supporter le parall�
 
 Parce qu'elle facilite la parallélisation des codes, en évitant un certain nombre de problèmes liés à la modification de données en mémoire, la programmation fonctionnelle connaît un retour en grâce depuis quelques années. C++ a donc intégré plusieurs outils facilitant ce type de programmation.
 
-  - [Inférence de type](TheorieClassiqueInference "wikilink") *[(question 1)](CoefsFonctionnelleConcurrente "wikilink")*
-  - [Fonctions anonymes ("lambdas")](Cpp11Lambdas "wikilink") *[(question 2)](CoefsFonctionnelleConcurrente#a2Lambdas "wikilink")*
-  - [For généralisé](Cpp11ForGeneralise "wikilink") *[(question 3)](CoefsFonctionnelleConcurrente#a3Forgénéralisé "wikilink")*
+  - [Inférence de type](TheorieClassiqueInference.md) *[(question 1)](CoefsFonctionnelleConcurrente.md)*
+  - [Fonctions anonymes ("lambdas")](Cpp11Lambdas.md) *[(question 2)](CoefsFonctionnelleConcurrente#a2Lambdas.md)*
+  - [For généralisé](Cpp11ForGeneralise.md) *[(question 3)](CoefsFonctionnelleConcurrente#a3Forgénéralisé.md)*
 
 ## Programmation concurrente
 
 C++ permet désormais de décomposer un programme en un ensemble de tâches, lesquelles susceptibles de s'exécuter simultanément quand le matériel le permet. On parle de programmation concurrente.
 
-  - [Processus légers ("threads")](Cpp11Threads "wikilink") *[(question 4)](CoefsFonctionnelleConcurrente#a4Parallélisationdestests "wikilink")*
-  - [Données partagées](Cpp11SharedData "wikilink") *[(questions 5 et 6)](CoefsFonctionnelleConcurrente#a5Stresstest "wikilink")*
-  - [Promesses de futurs](Cpp11Future "wikilink") *[(question 7)](CoefsFonctionnelleConcurrente#a7Appelsasynchrone "wikilink")*
+  - [Processus légers ("threads")](Cpp11Threads.md) *[(question 4)](CoefsFonctionnelleConcurrente#a4Parallélisationdestests.md)*
+  - [Données partagées](Cpp11SharedData.md) *[(questions 5 et 6)](CoefsFonctionnelleConcurrente#a5Stresstest.md)*
+  - [Promesses de futurs](Cpp11Future.md) *[(question 7)](CoefsFonctionnelleConcurrente#a7Appelsasynchrone.md)*
 
 ## Compléments
 
-  - [Variables de threads](Cpp11Tls "wikilink")
-  - [Ce qui se prépare pour C++17/20](Cpp17Parallele "wikilink")
+  - [Variables de threads](Cpp11Tls.md)
+  - [Ce qui se prépare pour C++17/20](Cpp17Parallele.md)
 
   
   

@@ -1,4 +1,4 @@
-# [C++11/14 : compléments](TheorieBonnesPratiquesBiblio "wikilink")
+# [C++11/14 : compléments](TheorieBonnesPratiquesBiblio.md)
 
 ## Références universelles
 

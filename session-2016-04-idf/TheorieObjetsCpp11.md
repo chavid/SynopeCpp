@@ -1,4 +1,4 @@
-# [C++11 : amélioration des fonctionnalités des objets](TheorieObjets "wikilink")
+# [C++11 : amélioration des fonctionnalités des objets](TheorieObjets.md)
 
 ## Amélioration de la construction des objets
 

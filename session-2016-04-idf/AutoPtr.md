@@ -1,4 +1,4 @@
-# [Pointeurs automatiques (std::auto\_ptr)](TheorieBonnesPratiquesBiblio "wikilink")
+# [Pointeurs automatiques (std::auto\_ptr)](TheorieBonnesPratiquesBiblio.md)
 
 ## Les problèmes des pointeurs ordinaires
 

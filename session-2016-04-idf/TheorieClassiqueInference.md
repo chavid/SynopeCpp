@@ -1,4 +1,4 @@
-# [Inférence de types](TheorieFonctionnelleConcurrente "wikilink")
+# [Inférence de types](TheorieFonctionnelleConcurrente.md)
 
 ## Le mot-clé `auto`
 

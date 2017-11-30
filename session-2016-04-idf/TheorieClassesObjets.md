@@ -1,4 +1,4 @@
-# [Classes & objets](TheorieObjets "wikilink")
+# [Classes & objets](TheorieObjets.md)
 
 \_\_FORCETOC\_\_
 

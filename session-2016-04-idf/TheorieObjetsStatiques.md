@@ -1,4 +1,4 @@
-# [Variables de classe et fonctions statiques](TheorieObjets "wikilink")
+# [Variables de classe et fonctions statiques](TheorieObjets.md)
 
 \_\_FORCETOC\_\_
 

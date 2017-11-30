@@ -1,4 +1,4 @@
-# [C++11 : std::array](TheorieBonnesPratiquesBiblio "wikilink")
+# [C++11 : std::array](TheorieBonnesPratiquesBiblio.md)
 
 ## Motivation : améliorer la gestion des tableaux de taille fixe
 

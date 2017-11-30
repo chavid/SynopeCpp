@@ -1,4 +1,4 @@
-# [Interfaces implicites et le polymorphisme de compilation](TheorieGenerique "wikilink")
+# [Interfaces implicites et le polymorphisme de compilation](TheorieGenerique.md)
 
 Le monde de la programmation orientée-objet tourne autour d'interfaces explicites (classes abstraites) et d'un polymorphisme dynamique (au moment de l'exécution). Par exemple, étant donné cette classe :
 

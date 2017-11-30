@@ -1,8 +1,8 @@
-# [TP : Opérateurs & Templates](README.md "wikilink") \[\#license ©\]
+# [TP : Opérateurs & Templates](README.md.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 
-Enfin, les deux fonctionnalités qui font de C++ un langage "plus qu'objet". Aucune des modifications effectuées dans cette page n'est censée modifier les affichages du programme.\\\\ Il est conseillé de partir du fichier [tp3\_heritage\_polymorphisme.cpp](coefs-old/tp3_heritage_polymorphisme.cpp "wikilink"). Si vous êtes sous linux, vous pouvez utilisez le script [tp3\_heritage\_polymorphisme.sh](coefs-old/tp3_heritage_polymorphisme.sh "wikilink") qui va compiler le programme, l'éxécuter et finalement signaler si ses affichages ont été modifiés.\\\\ Accès à la [section théorique correspondante](FondamentauxOperateursTemplates "wikilink").
+Enfin, les deux fonctionnalités qui font de C++ un langage "plus qu'objet". Aucune des modifications effectuées dans cette page n'est censée modifier les affichages du programme.\\\\ Il est conseillé de partir du fichier [tp3\_heritage\_polymorphisme.cpp](coefs-old/tp3_heritage_polymorphisme.cpp.md). Si vous êtes sous linux, vous pouvez utilisez le script [tp3\_heritage\_polymorphisme.sh](coefs-old/tp3_heritage_polymorphisme.sh.md) qui va compiler le programme, l'éxécuter et finalement signaler si ses affichages ont été modifiés.\\\\ Accès à la [section théorique correspondante](FondamentauxOperateursTemplates.md).
 
 ## 1\) operator\*
 

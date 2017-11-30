@@ -1,4 +1,4 @@
-# [Diverses nouveautés de la bibliothèque standard](TheorieBonnesPratiquesBiblio "wikilink")
+# [Diverses nouveautés de la bibliothèque standard](TheorieBonnesPratiquesBiblio.md)
 
 Bon nombre de classes existantes ont été réécrites pour bénéficier de la nouvelle sémantique de déplacement, des nouvelles possibilités d'initialisation, ou des nouvelles expressions constantes. Ci-dessous, une sélection de nouveautés qui n'ont pas déjà été traitées ailleurs.
 

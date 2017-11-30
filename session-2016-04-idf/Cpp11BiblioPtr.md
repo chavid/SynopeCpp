@@ -1,4 +1,4 @@
-# [Pointeurs améliorés de la bibliothèque standard](TheorieBonnesPratiquesBiblio "wikilink")
+# [Pointeurs améliorés de la bibliothèque standard](TheorieBonnesPratiquesBiblio.md)
 
 On qualifie de pointeurs améliorés (smart), des objets qui se comportent comme des pointeurs (support des opérateurs `*` et `->`) mais qui rendent des services supplémentaires, notamment la destruction automatique des objets pointés.
 

@@ -1,4 +1,4 @@
-# [Constructeurs, assignateurs et conversions multiples](TheorieGenerique "wikilink")
+# [Constructeurs, assignateurs et conversions multiples](TheorieGenerique.md)
 
 ## Constructeurs et assignateurs généralisés
 

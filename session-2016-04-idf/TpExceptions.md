@@ -1,8 +1,8 @@
-# [TP : Exceptions](README.md "wikilink") \[\#license ©\]
+# [TP : Exceptions](README.md.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 
-Il est conseillé de partir du fichier [tp6\_static\_const.cpp](coefs-old/tp6_static_const.cpp "wikilink"). Si vous êtes sous linux, vous pouvez utilisez le script [tp6\_static\_const.sh](coefs-old/tp6_static_const.sh "wikilink") qui va compiler le programme, l'éxécuter et vérifier que l'affichage ne change pas.\\\\ Accès à la [section théorique correspondante](ComplementExceptions "wikilink").
+Il est conseillé de partir du fichier [tp6\_static\_const.cpp](coefs-old/tp6_static_const.cpp.md). Si vous êtes sous linux, vous pouvez utilisez le script [tp6\_static\_const.sh](coefs-old/tp6_static_const.sh.md) qui va compiler le programme, l'éxécuter et vérifier que l'affichage ne change pas.\\\\ Accès à la [section théorique correspondante](ComplementExceptions.md).
 
 ## 1\) Création d'une classe pour les exceptions
 

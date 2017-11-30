@@ -1,8 +1,8 @@
-# [TP : Conclusion](README.md "wikilink") \[\#license ©\]
+# [TP : Conclusion](README.md.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 
-La solution finale proposée se trouve dans le fichier [tp9\_stl.cpp](coefs-old/tp9_stl.cpp "wikilink"). Si vous êtes sous linux, vous pouvez utilisez le script [tp9\_stl.sh](coefs-old/tp9_stl.sh "wikilink") qui va compiler le programme et l'éxécuter.
+La solution finale proposée se trouve dans le fichier [tp9\_stl.cpp](coefs-old/tp9_stl.cpp.md). Si vous êtes sous linux, vous pouvez utilisez le script [tp9\_stl.sh](coefs-old/tp9_stl.sh.md) qui va compiler le programme et l'éxécuter.
 
 ## \*) Question bonus
 

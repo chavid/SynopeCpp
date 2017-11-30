@@ -1,17 +1,17 @@
-# [Bonnes pratiques & bibliothèque standard](README.md "wikilink")
+# [Bonnes pratiques & bibliothèque standard](README.md.md)
 
 ## C++ Historique
 
-  - [Conteneurs, itérateurs et algorithmes](ComplementStl "wikilink") *[(question 1)](CoefsBonnesPratiquesBiblio "wikilink")*
-  - [L'Acquisition d'une Ressource est une Initialisation (RAII)](RAII "wikilink") *[(question 2)](CoefsBonnesPratiquesBiblio#a2Tentativedecréationdunpointeuramélioré "wikilink")*
-  - [Pointeur automatique](AutoPtr "wikilink") *[(question 3.a)](CoefsBonnesPratiquesBiblio#a3Copieparvidage "wikilink")*
+  - [Conteneurs, itérateurs et algorithmes](ComplementStl.md) *[(question 1)](CoefsBonnesPratiquesBiblio.md)*
+  - [L'Acquisition d'une Ressource est une Initialisation (RAII)](RAII.md) *[(question 2)](CoefsBonnesPratiquesBiblio#a2Tentativedecréationdunpointeuramélioré.md)*
+  - [Pointeur automatique](AutoPtr.md) *[(question 3.a)](CoefsBonnesPratiquesBiblio#a3Copieparvidage.md)*
 
 ## C++ Moderne
 
-  - [Références temporaires et déplacement](Cpp11Deplacement "wikilink") *[(question 3.b)](CoefsBonnesPratiquesBiblio#a3Copieparvidage "wikilink")*
-  - [Pointeurs améliorés standards](Cpp11BiblioPtr "wikilink") *[(questions 4 à 6)](CoefsBonnesPratiquesBiblio#a4Utilisationdestd "wikilink")*
-  - [Diverses Nouveautés de la bibliothèque standard](Cpp11Biblio "wikilink")
-  - [Complements](Cpp11BiblioComplements "wikilink")
+  - [Références temporaires et déplacement](Cpp11Deplacement.md) *[(question 3.b)](CoefsBonnesPratiquesBiblio#a3Copieparvidage.md)*
+  - [Pointeurs améliorés standards](Cpp11BiblioPtr.md) *[(questions 4 à 6)](CoefsBonnesPratiquesBiblio#a4Utilisationdestd.md)*
+  - [Diverses Nouveautés de la bibliothèque standard](Cpp11Biblio.md)
+  - [Complements](Cpp11BiblioComplements.md)
 
   
   

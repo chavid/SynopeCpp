@@ -1,4 +1,4 @@
-# [Introduction](README.md "wikilink")
+# [Introduction](README.md.md)
 
 ## Auteurs
 

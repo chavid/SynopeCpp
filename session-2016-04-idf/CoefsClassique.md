@@ -1,4 +1,4 @@
-# [TP Coefs : Programmation Procédurale](README.md "wikilink")
+# [TP Coefs : Programmation Procédurale](README.md.md)
 
 Tout nombre réel peut être approximé par le rapport entre deux nombres entiers. Pour simplifier les éventuels calculs, on décide que l'entier au dénominateur sera une puissance de deux. En effet, la multiplication ou la division d'un entier par une puissance de deux se réalise simplement en décalant les bits de l'entier vers la gauche ou vers la droite.
 
@@ -8,7 +8,7 @@ Dans le cadre du TP, on va faire varier arbitrairement le nombre de bits autoris
 
 Pour amorcer le TP : comprenez, compilez et éxécutez le fichier [tp1\_procedural\_etape00.cpp](https://github.com/ReseauDevlog/SynopeCpp/raw/master/session-2016-04-idf/coefs/tp1_procedural_etape00.cpp), comprenant de petites fonctions utiles pour la suite.
 
-Accès à la [section théorique correspondante](TheorieClassique "wikilink").
+Accès à la [section théorique correspondante](TheorieClassique.md).
 
 ## 1\) Ajout d'une boucle
 

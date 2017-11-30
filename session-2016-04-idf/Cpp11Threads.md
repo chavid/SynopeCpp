@@ -1,4 +1,4 @@
-# [C++11 : les threads](TheorieFonctionnelleConcurrente "wikilink")
+# [C++11 : les threads](TheorieFonctionnelleConcurrente.md)
 
 Depuis C++11, la bibliothèque standard C++ permet à un programmeur de lancer l'exécution d'une fonction en parallèle du programme actuel. On parle de processus légers ou threads.
 

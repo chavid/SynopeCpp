@@ -1,4 +1,4 @@
-# [Les conteneurs historiques de bibliothèque standard](TheorieBonnesPratiquesBiblio "wikilink")
+# [Les conteneurs historiques de bibliothèque standard](TheorieBonnesPratiquesBiblio.md)
 
 \_\_FORCETOC\_\_
 

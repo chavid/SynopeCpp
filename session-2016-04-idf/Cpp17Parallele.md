@@ -1,4 +1,4 @@
-# [C++ 17/20 Parallèle](TheorieFonctionnelleConcurrente "wikilink")
+# [C++ 17/20 Parallèle](TheorieFonctionnelleConcurrente.md)
 
 ## Sur les rails
 

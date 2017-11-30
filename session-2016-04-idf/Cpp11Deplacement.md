@@ -1,4 +1,4 @@
-# [C++11/14 : Références temporaires et déplacement de données internes](TheorieBonnesPratiquesBiblio "wikilink")
+# [C++11/14 : Références temporaires et déplacement de données internes](TheorieBonnesPratiquesBiblio.md)
 
 ## Motivation : éliminer les copies profondes inutiles
 

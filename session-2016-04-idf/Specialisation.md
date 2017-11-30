@@ -1,4 +1,4 @@
-# [Complications liées aux possibilités de spécialisation](TheorieGenerique "wikilink")
+# [Complications liées aux possibilités de spécialisation](TheorieGenerique.md)
 
 La possibilité de spécialiser un patron offre un moyen exceptionnellement souple de traiter les cas particuliers, sans obscurcir le cas général. On peut tout faire dans une spécialisation, y compris revoir totalement l'interface d'un patron de classe, et les variantes spécialisées n'ont pas besoin d'être regroupées avec le cas général, et peuvent surgir "par surprise". En conséquence, il y a des situations où le compilateur ne veut pas se risquer à faire des hypothèses sur l'interface d'un patron qui n'est pas encore entièrement connu, et il a besoin d'être "accompagné" par le programmeur.
 
@@ -222,7 +222,7 @@ class MsgSender<CompanyZ>                    // a total specialization of
  } ;
 ```
 
-A son tour, la définition générale de `LoggingMsgSender` devient inopérante ... à cause des possibilités de spécialisation, le compilateur refuse toute hypothèse à propos de l'interface `MsgSender`, et refuse de présumer l'existence de `sendClear` dans la classe paramétrée `MsgSender`, même pour des paramètres autres que `CompanyZ`. En quelque sorte, en croisant la route de la programmation générique, l'héritage s'arrête (voir règle [1](Regle01 "wikilink")). Pour restaurer cet héritage, il y a trois moyens.
+A son tour, la définition générale de `LoggingMsgSender` devient inopérante ... à cause des possibilités de spécialisation, le compilateur refuse toute hypothèse à propos de l'interface `MsgSender`, et refuse de présumer l'existence de `sendClear` dans la classe paramétrée `MsgSender`, même pour des paramètres autres que `CompanyZ`. En quelque sorte, en croisant la route de la programmation générique, l'héritage s'arrête (voir règle [1](Regle01.md)). Pour restaurer cet héritage, il y a trois moyens.
 
 Le premier, appeler la méthode hériter à travers le nom de l'objet courant `this` :
 
@@ -242,7 +242,7 @@ class LoggingMsgSender : public MsgSender<Company>
  } ;
 ```
 
-Le second, utiliser la directive `using`, déjà utilisée pour exposer des méthodes cachées par une redéfinition (voir règle [33](Regle33 "wikilink")) :
+Le second, utiliser la directive `using`, déjà utilisée pour exposer des méthodes cachées par une redéfinition (voir règle [33](Regle33.md)) :
 
 ``` cpp
 template <typename Company>

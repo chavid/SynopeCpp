@@ -1,10 +1,10 @@
-# [Programmation orientée objet](README.md "wikilink")
+# [Programmation orientée objet](README.md.md)
 
-  - [Classes & objets](TheorieClassesObjets "wikilink") *[(questions 1 à 8)](CoefsObjets "wikilink")*
-  - [Héritage & polymorphisme](TheorieHeritagePolymorphisme "wikilink") *[(questions 9 à 16)](CoefsObjets#a9Cr%C3%A9ationduTesteurdebase "wikilink")*
-  - [Construction & destruction](TheorieConstruction "wikilink") *[(questions 17 à 23)](CoefsObjets#a17Constructeursdetesteurs "wikilink")*
-  - [Variables de classe & méthodes statiques](TheorieObjetsStatiques "wikilink") *[(question 24)](#a24RendrelaclasseTesteursstatique "wikilink")*
-  - [Nouveautés C++11/14](TheorieObjetsCpp11 "wikilink")
+  - [Classes & objets](TheorieClassesObjets.md) *[(questions 1 à 8)](CoefsObjets.md)*
+  - [Héritage & polymorphisme](TheorieHeritagePolymorphisme.md) *[(questions 9 à 16)](CoefsObjets#a9Cr%C3%A9ationduTesteurdebase.md)*
+  - [Construction & destruction](TheorieConstruction.md) *[(questions 17 à 23)](CoefsObjets#a17Constructeursdetesteurs.md)*
+  - [Variables de classe & méthodes statiques](TheorieObjetsStatiques.md) *[(question 24)](#a24RendrelaclasseTesteursstatique.md)*
+  - [Nouveautés C++11/14](TheorieObjetsCpp11.md)
 
   
   

@@ -1,8 +1,8 @@
-# [TP : Variables & Fonctions](README.md "wikilink") \[\#license ©\]
+# [TP : Variables & Fonctions](README.md.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 
-Dans cette première partie, on survole la syntaxe de la partie "procédurale" du langage, essentiellement issue du C. Il est conseillé de partir du fichier [tp0\_code\_initial.cpp](coefs-old/tp0_code_initial.cpp "wikilink"), que vous pouvez compiler et éxécuter avec le script [tp0\_code\_initial.sh](coefs-old/tp0_code_initial.sh "wikilink") si vous êtes sous linux.\\\\ Accès à la [section théorique correspondante](FondamentauxVariablesFonctions "wikilink").
+Dans cette première partie, on survole la syntaxe de la partie "procédurale" du langage, essentiellement issue du C. Il est conseillé de partir du fichier [tp0\_code\_initial.cpp](coefs-old/tp0_code_initial.cpp.md), que vous pouvez compiler et éxécuter avec le script [tp0\_code\_initial.sh](coefs-old/tp0_code_initial.sh.md) si vous êtes sous linux.\\\\ Accès à la [section théorique correspondante](FondamentauxVariablesFonctions.md).
 
 ## 1\) Ajout d'une boucle
 

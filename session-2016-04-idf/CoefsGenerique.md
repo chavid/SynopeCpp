@@ -1,8 +1,8 @@
-# [TP Coefs : Programmation Générique](README.md "wikilink")
+# [TP Coefs : Programmation Générique](README.md.md)
 
 \_\_FORCETOC\_\_
 
-Partez du fichier [tp4\_generique\_etape00.cpp](https://github.com/ReseauDevlog/SynopeCpp/raw/master/session-2016-04-idf/coefs/tp4_generique_etape00.cpp).\\\\ Accès à la [section théorique correspondante](TheorieGenerique "wikilink").
+Partez du fichier [tp4\_generique\_etape00.cpp](https://github.com/ReseauDevlog/SynopeCpp/raw/master/session-2016-04-idf/coefs/tp4_generique_etape00.cpp).\\\\ Accès à la [section théorique correspondante](TheorieGenerique.md).
 
 ## 1\) Coef<int>
 

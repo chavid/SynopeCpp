@@ -1,4 +1,4 @@
-# [C++11/14 : partage de données entre processus légers](TheorieFonctionnelleConcurrente "wikilink")
+# [C++11/14 : partage de données entre processus légers](TheorieFonctionnelleConcurrente.md)
 
 Les threads d'un même programme peuvent parfois avoir à interagir au même moment avec les mêmes données, ce qui conduit à des effets indésirables.
 

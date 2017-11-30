@@ -1,4 +1,4 @@
-# [Les fonctions lambdas](TheorieFonctionnelleConcurrente "wikilink")
+# [Les fonctions lambdas](TheorieFonctionnelleConcurrente.md)
 
 Les fonctions lambda (ou anonymes), introduites en C++11, peuvent être définies au vol n'importe où dans le code, là ou l'on en a besoin. Cela permet de se passer d'une inutile déclaration préalable de la fonction, relativement inutile quand la fonction ne doit servir qu'une fois. Par ailleurs, la mécanique de capture des variables locales permet d'éviter la lourdeur d'un foncteur (objet appelable à travers l'opérateur ()). Dans les cas simples, le code produit est plus concis et plus clair. Si on pousse le mécanisme dans ses retranchements avec des fonctions lambda très compliquées, c'est moins évident... à vous de juger.
 

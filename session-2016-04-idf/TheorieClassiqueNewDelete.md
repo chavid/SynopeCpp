@@ -1,4 +1,4 @@
-# [Variables et tableaux sur le tas](TheorieClassique "wikilink")
+# [Variables et tableaux sur le tas](TheorieClassique.md)
 
 \_\_FORCETOC\_\_
 

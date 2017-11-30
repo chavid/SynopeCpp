@@ -1,8 +1,8 @@
-# [TP Coefs : Exceptions & Opérateurs](README.md "wikilink")
+# [TP Coefs : Exceptions & Opérateurs](README.md.md)
 
 \_\_FORCETOC\_\_
 
-Partez du fichier [tp3\_exceptions\_etape00.cpp](https://github.com/ReseauDevlog/SynopeCpp/raw/master/session-2016-04-idf/coefs/tp3_exceptions_etape00.cpp).\\\\ Accès à la [section théorique correspondante](TheorieExceptionsOperateurs "wikilink").
+Partez du fichier [tp3\_exceptions\_etape00.cpp](https://github.com/ReseauDevlog/SynopeCpp/raw/master/session-2016-04-idf/coefs/tp3_exceptions_etape00.cpp).\\\\ Accès à la [section théorique correspondante](TheorieExceptionsOperateurs.md).
 
 ## 1\) Création d'une classe pour les exceptions
 

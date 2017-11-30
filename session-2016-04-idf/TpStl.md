@@ -1,8 +1,8 @@
-# [TP : Standard Template Library](README.md "wikilink") \[\#license ©\]
+# [TP : Standard Template Library](README.md.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 
-Il est conseillé de partir du fichier [tp8\_io.cpp](coefs-old/tp8_io.cpp "wikilink"). Si vous êtes sous linux, vous pouvez utilisez le script [tp8\_io.sh](coefs-old/tp8_io.sh "wikilink") qui va compiler le programme, l'éxécuter et vérifier que l'affichage ne change pas.Accès à la [section théorique correspondante](ComplementStl "wikilink").
+Il est conseillé de partir du fichier [tp8\_io.cpp](coefs-old/tp8_io.cpp.md). Si vous êtes sous linux, vous pouvez utilisez le script [tp8\_io.sh](coefs-old/tp8_io.sh.md) qui va compiler le programme, l'éxécuter et vérifier que l'affichage ne change pas.Accès à la [section théorique correspondante](ComplementStl.md).
 
 ## 1\) Tout ça pour ça...
 

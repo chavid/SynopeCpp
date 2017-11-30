@@ -1,7 +1,7 @@
-# [Exceptions & opérateurs](README.md "wikilink")
+# [Exceptions & opérateurs](README.md.md)
 
-  - [Exceptions](ComplementExceptions "wikilink") *[(questions 1 à 2)](CoefsExceptionsOperateurs "wikilink")*
-  - [Opérateurs](FondamentauxOperateurs "wikilink") *[(questions 3 à 8)](CoefsExceptionsOperateurs#a3operator "wikilink")*
+  - [Exceptions](ComplementExceptions.md) *[(questions 1 à 2)](CoefsExceptionsOperateurs.md)*
+  - [Opérateurs](FondamentauxOperateurs.md) *[(questions 3 à 8)](CoefsExceptionsOperateurs#a3operator.md)*
 
   
   

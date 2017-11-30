@@ -1,4 +1,4 @@
-# [C++11 : petites nouveautés pratiques](TheorieClassique "wikilink")
+# [C++11 : petites nouveautés pratiques](TheorieClassique.md)
 
 ## Le mot-clé `auto`
 

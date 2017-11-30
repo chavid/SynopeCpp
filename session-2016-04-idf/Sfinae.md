@@ -1,4 +1,4 @@
-# [A la croisée de la surcharge et des patrons](TheorieGenerique "wikilink")
+# [A la croisée de la surcharge et des patrons](TheorieGenerique.md)
 
 ## Motivation
 
