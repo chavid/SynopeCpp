@@ -1,0 +1,15 @@
+<p>
+Tout nombre réel peut être approximé par le rapport entre deux nombres entiers. Pour simplifier les éventuels calculs, on décide que l'entier au dénominateur sera une puissance de deux. En effet, la multiplication ou la division d'un entier par une puissance de deux se réalise simplement en décalant les bits de l'entier vers la gauche ou vers la droite.
+</p>
+
+<p>
+On approximera donc tout réel r par une fraction <i>numerateur/2<sup>exposant</sup></i>. Plus les valeurs de <i>numerateur</i> et <i>exposant</i> sont élevées, plus l'approximation peut-être précise. Par exemple, 0.65 peut être approximé successivement par 1/2<sup>1</sup> (0.5), 3/2<sup>2</sup> (0.75), 5/2<sup>3</sup> (0.625), ... On choisira donc les nombres les plus élevés possibles, dans les limites fixés par le système, c'est à dire par le nombre de bits disponibles pour coder ces nombres. 
+</p>
+
+<p>
+Dans le cadre du TP, on va faire varier arbitrairement le nombre de bits autorisés pour stocker le numérateur, et calculer l'effet sur la précision de l'approximation. On notera que si on dispose de N bits pour stocker un entier, le plus grand entier possible est égal à 2<sup>N</sup>-1.
+</p>
+
+<p>
+Pour amorcer le TP : comprenez, compilez et éxécutez le fichier <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp0_code_initial.cpp">tp0_code_initial.cpp</a>, comprenant de petites fonctions utiles pour la suite. Si vous travaillez sous linux, vous pouvez utiliser le script <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp0_code_initial.sh">tp0_code_initial.sh</a> pour enchainer compilation et éxécution.
+</p>

@@ -1,0 +1,238 @@
+<p>
+Dans cette première partie, on survole la syntaxe de la partie "procédurale" du langage, essentiellement issue du C. Il est conseillé de partir du fichier <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp0_code_initial.cpp">tp0_code_initial.cpp</a>, que vous pouvez compiler et éxécuter avec le script <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp0_code_initial.sh">tp0_code_initial.sh</a> si vous êtes sous linux. Accès à la <a href="/?q=node/116">section théorique correspondante</a>.
+</p>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>1) Ajout d'une boucle</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>On veut approximer la valeur <i><b>0.65</b></i> par le rapport d'un entier et d'une puissance de deux. Ecrivez un programme qui calcule la valeur du numérateur pour un dénominateur valant <i><b>2</b></i>, <i><b>2<sup>2</sup></b></i>, <i><b>2<sup>3</sup></b></i>... <i><b>2<sup>8</sup></b></i>. Afficher la valeur que l'on approxime, la valeur du numérateur, et la puissance de deux au dénuménateur :</p>
+<pre>
+0.65 ~ 1/2^1
+0.65 ~ 3/2^2
+0.65 ~ 5/2^3
+0.65 ~ 10/2^4
+0.65 ~ 21/2^5
+0.65 ~ 42/2^6
+0.65 ~ 83/2^7
+0.65 ~ 166/2^8
+</pre>
+<p>
+&nbsp;
+</p>
+
+
+<hr size="2" width="100%" />
+<h2><b><i>2) Ajout d'une fonction</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>Placez le programme précédent dans une fonction appelée <i>approxime(...)</i>, qui prend en argument la valeur réelle à approximer. Modifiez le programme principal pour qu'il appelle cette fonction avec les valeurs <i><b>0.65</b></i> et <i><b>0.35</b></i>. Le programme principal doit être :</p>
+<pre>
+int main()
+ {
+  std::cout &lt;&lt; std::endl ;
+  approxime(0.65) ;
+  std::cout &lt;&lt; std::endl ;
+  approxime(0.35) ;
+  std::cout &lt;&lt; std::endl ;
+  return 0 ;
+ }
+</pre>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>3) Calcul de l'approximation</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>Ajoutez dans la fonction <i>approxime(...)</i> l'affichage de la valeur approximée, qui se calcule en divisant chaque numérateur par la puissance de deux associée. Attention, la division d'un entier par un entier retourne un entier : <i><b>3/4</b></i> vaut <i><b>0</b></i>. Une division retourne un réel si l'un des termes est réel : <i><b>3./4</b></i> ou <i><b>double(3)/4</b></i> vaut <i><b>0.75</b></i>. L'affichage attendu est le suivant :</p>
+</p>
+<pre>
+
+0.65 ~   1/2^1 = 0.5
+0.65 ~   3/2^2 = 0.75
+0.65 ~   5/2^3 = 0.625
+0.65 ~  10/2^4 = 0.625
+0.65 ~  21/2^5 = 0.65625
+0.65 ~  42/2^6 = 0.65625
+0.65 ~  83/2^7 = 0.648438
+0.65 ~ 166/2^8 = 0.648438
+
+0.35 ~   1/2^1 = 0.5
+0.35 ~   1/2^2 = 0.25
+0.35 ~   3/2^3 = 0.375
+0.35 ~   6/2^4 = 0.375
+0.35 ~  11/2^5 = 0.34375
+0.35 ~  22/2^6 = 0.34375
+0.35 ~  45/2^7 = 0.351562
+0.35 ~  90/2^8 = 0.351562
+
+</pre>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>4) Recherche de la meilleure approximation pour un numérateur maximum donné.</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Plus le numérateur et l'exposant au dénominateur sont grands, plus l'approximation est précise. Dans <i>approxime(...)</i>, modifiez la boucle pour qu'elle recherche le meilleur couple numerateur/exposant, sans que le numérateur ne dépasse une certaine valeur maximale passez en argument à la fonction. Ne conservez les affichages que pour ce meilleur couple, mais afficher aussi la valeur du numérateur maximum autorisé. Utilisez le programme principal suivant :</p>
+<pre>
+int main()
+ {
+  std::cout &lt;&lt; std::endl ;
+  approxime(15,0.65) ;
+  approxime(255,0.65) ;
+  std::cout &lt;&lt; std::endl ;
+  approxime(15,0.35) ;
+  approxime(255,0.35) ;
+  std::cout &lt;&lt; std::endl ;
+  return 0 ;
+ }
+</pre>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>5) Calcul du numérateur maximum en fonction du nombre de bits</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>
+La plus grande valeur utilisable pour le numérateur dépend du nombre de bits utilisés pour représenter ce nombre entier. Dans les arguments de <i>approxime(..)</i>, remplacez l'argument désignant la valeur maximale par un argument désignant le nombre maximum de bits et corrigez en conséquence le corps de la fonction, en utilisant la fonction <i>entier_max(...)</i>. Dans l'affichage, remplacez le numérateur maximum par le nombre de bits. Dans le programme principal, faites deux boucles qui font varier le nombre de bits de 2 à 8 par pas de 2, l'une qui appelle <i>approxime(...)</i> pour <i><b>0.65</b></i>, et l'autre pour <i><b>0.35</b></i>. L'affichage attendu est le suivant :
+</p>
+<pre>
+
+2 bits : 0.65 ~   3/2^2 = 0.75
+4 bits : 0.65 ~  10/2^4 = 0.625
+6 bits : 0.65 ~  42/2^6 = 0.65625
+8 bits : 0.65 ~ 166/2^8 = 0.648438
+
+2 bits : 0.35 ~   3/2^3 = 0.375
+4 bits : 0.35 ~  11/2^5 = 0.34375
+6 bits : 0.35 ~  45/2^7 = 0.351562
+8 bits : 0.35 ~ 179/2^9 = 0.349609
+
+</pre>
+<p>
+&nbsp;
+</p>
+
+
+<hr size="2" width="100%" />
+<h2><b><i>6) Déplacement des affichages dans une nouvelle fonction intermédiaire</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Entre <i>main(...)</i> et <i>approxime(...)</i>, insérez la nouvelle fonction <i>teste_approxime(...)</i> ci-dessous, dans laquelle on regroupe tous les affichages. Corriger la fonction <i>main(...)</i> pour qu'elle appelle <i>teste_approxime(...)</i> à la place d'<i>approxime(...)</i>. Enlevez les affichages de la fonction <i>approxime(...)</i>, et ajoutez deux arguments par lesquels elle doit retourner les meilleurs numérateur et exposant qu'elle a calculé.</p>
+<pre>
+#include &lt;iomanip&gt;  
+  
+void teste_approxime( int bits, double valeur )
+ {
+  int numerateur, exposant, erreur ;
+  approxime(bits,valeur,numerateur,exposant) ;
+  double approximation = double(numerateur)/fois_puissance_de_deux(1,exposant) ;
+  erreur = arrondi(100*(valeur-approximation)/valeur) ;
+  if (erreur&lt;0) { erreur = -erreur ; }
+  std::cout
+    &lt;&lt; bits &lt;&lt; " bits : " &lt;&lt; valeur &lt;&lt; " ~ "
+    &lt;&lt; std::setw(8) &lt;&lt; approximation
+    &lt;&lt; " (" &lt;&lt; erreur &lt;&lt; "/100)" &lt;&lt; std::endl ;
+ }
+</pre>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>7) Multiplication approximée</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Ecrivez la fonction <i>multiplie(...)</i> qui calcule le produit approximé d'un coefficient réel par un nombre entier et retourne un entier. Cette fonction doit approximer le réel à l'aide de la fonction <i>approxime(...)</i> ci-dessus. Les arguments de <i>multiplie(...)</i> sont le nombre maximum de bits pour l'approximation, le coefficient réel et le nombre entier. On ajoute une nouvelle boucle dans la fonction principale, afin de calculer l'approximation de <b>0.65*3515+0.35*4832</b> à l'aide de la nouvelle fonction <i>multiplie(...)</i>, pour un nombre de bits allant de 1 à 8 :</p>
+<pre>
+int main()
+ {
+  int bits ;
+  
+  std::cout &lt;&lt; std::endl ;
+  for ( bits=2 ; bits&lt;=8 ; bits=bits+2 )
+   { teste_approxime(bits,0.65) ; }
+
+  std::cout &lt;&lt; std::endl ;
+  for ( bits=2 ; bits&lt;=8 ; bits=bits+2 )
+   { teste_approxime(bits,0.35) ; }
+
+  std::cout&lt;&lt;std::endl ;
+  for ( bits=1 ; bits&lt;=8 ; bits=bits+1 )
+   {
+    int exact = arrondi(0.65*3515+0.35*4832) ;
+    int approx = multiplie(bits,0.65,3515) + multiplie(bits,0.35,4832) ;
+    std::cout &lt;&lt; bits &lt;&lt; &quot; bits : 0.65*3515+0.35*4832 = &quot; &lt;&lt; exact &lt;&lt; &quot; ~ &quot; &lt;&lt; approx &lt;&lt; std::endl ;
+   }
+
+  std::cout &lt;&lt; std::endl ;
+  return 0 ;
+ }
+</pre>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>8) Déplacement des affichages dans une nouvelle fonction intermédiaire</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>
+De même que nous l'avons déjà fait pour la fonction <i>test_approxime(...)</i>, créez une fonction <i>test_somme(...)</i> qui va servir à centraliser les affichages liés aux tests sur la somme pondérée <b>0.65*3515+0.35*4832</b>. <i>test_somme(...)</i> doit différer de <i>test_approxime(...)</i> sur quelques points. Notamment, le calcul d'erreur doit être fait en millièmes, et la fonction <i>test_somme(...)</i> a cinq arguments : nombre de bits, premier coefficient réel, premier nombre entier, deuxième coefficient réel, deuxième nombre entier. Simplifiez le programme principal en ne laissant qu'un appel à <i>teste_somme(bits,0.65,3515,0.35,4832)</i> dans la dernière boucle. L'affichage à obtenir est le suivant :
+</p>
+<pre>
+2 bits : 0.65 ~     0.75 (15/100)
+4 bits : 0.65 ~    0.625 (4/100)
+6 bits : 0.65 ~  0.65625 (1/100)
+8 bits : 0.65 ~ 0.648438 (0/100)
+
+2 bits : 0.35 ~    0.375 (7/100)
+4 bits : 0.35 ~  0.34375 (2/100)
+6 bits : 0.35 ~ 0.351562 (0/100)
+8 bits : 0.35 ~ 0.349609 (0/100)
+
+1 bits : 3976 ~ 2965 (254/1000)
+2 bits : 3976 ~ 4448 (119/1000)
+3 bits : 3976 ~ 4008 (8/1000)
+4 bits : 3976 ~ 3857 (30/1000)
+5 bits : 3976 ~ 3967 (2/1000)
+6 bits : 3976 ~ 4004 (7/1000)
+7 bits : 3976 ~ 3977 (0/1000)
+8 bits : 3976 ~ 3968 (2/1000)
+</pre>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>*) Diagramme de classes UML de la solution</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p align="center">
+<img src="/?q=system/files/variables_fonctions.jpg" alt="Diagramme de classes UML" />
+</p>
+<p>
+&nbsp;
+</p>
+

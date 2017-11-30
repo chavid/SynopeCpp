@@ -1,0 +1,211 @@
+<p>
+Ici, on revoit le code pour y introduire des objets et des classes. Aucune des modifications effectuées dans cette page n'est censée modifier les affichages du programme. Il est conseillé de partir du fichier <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp1_variables_fonctions.cpp">tp1_variables_fonctions.cpp</a>. Si vous êtes sous linux, vous pouvez utilisez le script <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp1_variables_fonctions.sh">tp1_variables_fonctions.sh</a> qui va compiler le programme, l'éxécuter et finalement signaler si ses affichages ont été modifiés. Pour préparer les affichages qui serviront de référence, éxécutez le script une première fois et tapez <i>cp tp1_variables_fonctions.log tp1_variables_fonctions.ref</i>. Accès à la <a href="/?q=node/128">section théorique correspondante</a>.</p>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>1) Regroupement du numérateur et de l'exposant associé dans une classe Coef</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Créez la classe <i>Coef</i>, qui représente un nombre réel sous la forme d'un numérateur entier divisé par une puissance de deux. Dotez la classe de deux variables membres entières publiques nommées <i>numerateur_</i> et <i>exposant_</i>. Modifiez <i>approxime(...)</i> pour qu'elle manipule un objet de type <i>Coef</i> au lieu d'agir sur deux entiers passés par référence. Les fonctions <i>teste_approxime(...)</i> et <i>multiplie(...)</i> doivent être corrigées en conséquence. La déclaration d'<i>approxime(...)</i> doit être :
+</p>
+<pre>
+void approxime( int bits, double valeur, Coef & coef )
+ {
+  ...
+</pre>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>2) Retourner un Coef</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Modifiez à nouveau <i>approxime(...)</i> pour qu'elle retourne un objet de type <i>Coef</i> au lieu d'agir sur une référence. Les fonctions <i>teste_approxime(...)</i> et <i>multiplie(...)</i> doivent être elles aussi corrigées. La nouvelle déclaration d'<i>approxime(...)</i> doit être :
+</p>
+<pre>
+Coef approxime( int bits, double valeur )
+ {
+  ...
+</pre>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>3) Masquage des variables membres de Coef et rattachement des fonctions</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Placez les variables membres <i>numerateur_</i> et <i>exposant_</i> de Coef dans une section privée. En conséquence, toutes les fonctions qui ont besoin de manipuler directement <i>numerateur_</i> et <i>exposant_</i> doivent devenir des fonctions membre de Coef, ou sous-traiter ces manipulations à de nouvelle fonctions membres de Coef. Attention, les trois points ci-dessous doivent être traités avant de pouvoir à nouveau compiler :
+</p>
+
+<ul>
+
+<li>Ajoutez une nouvelle fonction membre <i>approximation(...)</i>, qui retourne la valeur réelle égale à <i><b>(numerateur_/2<sup>exposant_</sup>)</b></i>. Corrigez <i>teste_approxime(...)</i> pour utiliser cette nouvelle fonction membre.</li>
+
+<p>&nbsp;</p>
+
+<li>Transformez <i>approxime(...)</i> en fonction membre publique de <i>Coef</i>. Elle n'est alors plus censée retourner un Coef comme résultat, mais agir directement sur l'objet de type Coef pour lequel elle a été invoquée : <i>*this</i>. Corrigez <i>teste_approxime(...)</i>.</li> 
+
+<p>&nbsp;</p>
+
+<li>Transformez <i>multiplie(...)</i> en fonction membre publique de <i>Coef</i>. Au lieu de lui passer le nombre de bits et le coefficient réel en tant qu'arguments, supprimez ces arguments et faite en sorte que <i>multiplie(...)</i> utilise directement les valeurs déjà disponibles dans les variables membres <i>numerateur_</i> et <i>exposant_</i> de l'objet courant. Les utilisateurs, au lieu d'appeler <i>multiplie(bits,reel,entier)</i>, sont maintenant censés appeler d'abord <i>approxime(bits,reel)</i>, pour que <i>numerateur_</i> et <i>exposant_</i> soit préparés, puis appeler <i>multiplie(entier)</i>. Dans le cas de <i>teste_somme(...)</i>, cela donne :
+
+<pre>
+void teste_somme( int bits, double reel1, int entier1, double reel2, int entier2 )
+ {
+  Coef c1, c2 ;
+  c1.approxime(bits,reel1) ;
+  c2.approxime(bits,reel2) ;
+  int approx = c1.multiplie(entier1) + c2.multiplie(entier2) ;
+  ...
+</pre>
+
+</li>
+
+</ul>
+
+<p>&nbsp;</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>4)  Création de la première classe de test</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Créez la classe <i>TesteurCoef</i> chargée de tester la précision de la classe <i>Coef</i> pour les valeurs <i><b>0.65</b></i> et <i><b>0.35</b></i>. Elle aura les membres suivant :
+</p>
+<ul>
+  <li>une fonction privée <i>teste(...)</i>, copie conforme de <i>teste_approxime(...)</i> ;</li>
+  <li>une fonction publique <i>execute(...)</i>, avec en argument le nombre de bits souhaité, et qui invoque la fonction ci-dessus pour les valeurs <i><b>0.65</b></i> puis <i><b>0.35</b></i>.</li>
+</ul>
+<p>
+Supprimez la fonction <i>teste_approxime(...)</i>, remplacée par la classe TesteurCoef. On doit également adapter le programme principal en remplacant l'appel à la fonction <i>teste_approxime(...)</i> par la définition d'un objet de type <i>TesteurCoef</i> et un appel à sa fonction membre <i>execute(...)</i> : 
+</p>
+<pre>
+int main()
+ {
+  int bits ;
+
+  std::cout&lt;&lt;std::endl ;
+  TesteurCoef tc ;
+  for ( bits = 2 ; bits &lt;= 8 ; bits = bits + 2 )
+   { tc.execute(bits) ; }
+
+  std::cout&lt;&lt;std::endl ;
+  for ( bits = 1 ; bits &lt;= 8 ; bits = bits + 1 )
+   { teste_somme(bits,0.65,3515,0.35,4832) ; }
+
+  std::cout&lt;&lt;std::endl ;
+  return 0 ;
+ }
+</pre>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>5) Intégration du nombre de bits dans Coef</i></b></h2>
+<p>&nbsp;</p>
+<p>
+Ajoutez à <i>Coef</i> une variable membre privée entiere appelée <i>bits_</i>, censée représenter le nombre de bits à utiliser lors des appels à <i>approxime(...)</i>. Ajouter une fonction membre <i>void init( int bits )</i> qui permet à un utilisateur extérieur de Coef de changer la valeur de <i>bits_</i>, et une fonction membre <i>int lit_bits()</i> qui permet à un utilisateur extérieur de Coef de lire la valeur courante de <i>bits_</i>.
+</p>
+<p>
+Supprimez le premier argument de <i>approxime(...)</i>, et modifier cette fonction pour qu'elle utilise <i>bits_</i> à la place. Les utilisateurs, au lieu d'appeler <i>approxime(bits,reel)</i>, sont maintenant censés appeler d'abord <i>init(bits)</i> puis <i>approxime(reel)</i>. Dans le cas de <i>TesteurCoef::teste(...)</i>, cela donne :
+</p>
+<pre>
+class TesteurCoef
+ {
+  ...
+    void teste( int bits, double valeur )
+     {
+      Coef c ;
+      c.init(bits) ;
+      c.approxime(valeur) ;
+      ...
+</pre>
+
+<p>&nbsp;</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>6) </i></b></h2>
+<p>&nbsp;</p>
+<p>
+Ajoutez à la classe <i>TesteurCoef</i> un objet membre privé <i>c_</i> de type <i>Coef</i> et utilisez cet objet dans la fonction <i>teste</i>. Initialisez le nombre de bits de <i>c_</i> au début de la fonction membre <i>execute</i> et supprimez l'argument <i>bits</i> de <i>teste(...)</i>, devenu inutile.
+</p>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>7)</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Créez la classe <i>TesteurSomme</i> chargée de tester le calcul de <i><b>0.65*3515 + 0.35, 4832</b></i>. Elle aura les membres suivant :
+</p>
+<ul>
+  <li>deux objets membres privés <i>c1_</i> et <i>c2_</i> de type <i>Coef</i> ;</li>
+  <li>une fonction membre privée <i>teste</i>, inspirée de <i>teste_somme()</i> mais en supprimant l'argument <i>bits</i> ;</li>
+  <li>une fonction publique <i>execute</i>, avec en argument le nombre de bits souhaités, qui initialise <i>c1_</i> et <i>c2_</i> puis invoque la fonction <i>teste</i> :</li>
+<pre>
+class TesteurSomme
+ {
+  public :
+    void execute( int bits )
+     {
+      c1_.init(bits) ;
+      c2_.init(bits) ;
+      teste(0.65,3515,0.35,4832) ;
+     }
+    ...
+</pre>
+</ul>
+<p>
+Modifiez le programme principal en remplacant l'appel à la fonction <i>teste_somme(...)</i> par la définition d'un objet de type <i>TesteurSomme</i> et un appel à sa fonction membre <i>execute(...)</i>. Supprimez l'ancienne fonction <i>teste_somme(...)</i>.
+</p>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>8) Factorisation du calcul et de l'affichage de l'erreur</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Créez la fonction <i>erreur(...)</i> qui calcule et affiche le taux d'erreur entre un nombre réel et son approximation, sur une échelle entière allant de 0 à un indice maximum donné. Les arguments d'entrée sont :
+</p>
+<ul>
+	<li>le nombre de bits utilisés lors de l'approximation,</li>
+	<li>le nombre réel exact et son approximation,</li>
+	<li>la largeur d'affichage de l'approximation,</li>
+	<li>l'indice maximum d'erreur.</li>
+</ul>
+<p>
+La fonction doit afficher sur une ligne : le nombre de bits, le nombre réel exact, son approximation, l'indice d'erreur et l'indice maximum. Corrigez les fonctions <i>teste(...)</i> de <i>TesteurCoef</i> et <i>TesteurSomme</i> pour qu'elles utilisent la nouvelle fonction.
+</p>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>*) Diagramme de classes UML de la solution</i></b></h2>
+<p>
+&nbsp;
+</p>
+<p align="center">
+<img src="/?q=system/files/modele_classes_objets.jpg" alt="Diagramme de classes UML" />
+</p>
+<p>
+&nbsp;
+</p>

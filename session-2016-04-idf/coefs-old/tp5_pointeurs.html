@@ -1,0 +1,208 @@
+<p>En C++, on peut contrôler finement le cycle de vie des objets et gérer la mémoire qui leur est allouée. C'est ce qui permet de réaliser des applications plus performantes qu'avec d'autres langages, mais c'est aussi la source d'erreurs principale du langage. Pointeurs et gestion dynamique de la mémoire : attention danger ! Accès à la <a href="/?q=node/131">section théorique correspondante</a></p>
+
+<p>Il est conseillé de partir du fichier <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp4_operateurs_templates.cpp">tp4_operateurs_templates.cpp</a>. Si vous êtes sous linux, vous pouvez utilisez le script <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp4_operateurs_templates.sh">tp4_operateurs_templates.sh</a> qui va compiler le programme et l'éxécuter. 
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><i><b>1) Foncteur</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Transformez la fonction <i>boucle</i> en méthode <i>execute(...)</i> d'une nouvelle classe <i>Boucle</i>.
+</p>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><i><b>2) Stockage des testeurs</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Ajoutez à la classe <i>Boucle</i> un tableau membre de 5 testeurs, ainsi qu'une fonction membre pour copier des testeurs dans ce tableau.
+</p>
+<ul><i>
+  <li>La déclaration d'un tableau de cinq testeurs s'écrit : Testeur testeurs_[5] ;</li>
+  <li>La fonction membre de copie pourrait être de la forme  : void copie( int position, Testeur testeur ) {...}</li>
+</i></ul>
+
+<p>
+Supprimez de la fonction <i>Boucle::execute(...)</i> le premier argument de type Testeur, et modifiez cette fonction pour qu'elle s'applique successivement à tous les testeurs du tableau membre.
+</p>
+<p>
+Corrigez la fonction principale <i>main()</i> pour qu'elle commence par copier les deux testeurs dans l'objet de type Boucle, avant d'appeler l'opérateur d'éxécution. Pour simplifier, vous pouvez supprimer le premier appel (avec les arguments 1000000, 4, 16 et 4) :
+</p>
+<pre>
+int main()
+ {
+  TesteurCoef&lt;unsigned short&gt; tc ;
+  TesteurSomme&lt;short&gt; ts ;
+  Boucle boucle ;
+  boucle.copie(0,tc) ;
+  boucle.copie(1,ts) ;
+  boucle.execute(1000,1,8,1) ;
+  std::cout &lt;&lt; std::endl ;
+  return 0 ;
+ }
+</pre>
+<p>
+Comment expliquez-vous ce qui est affiché ?
+</p>
+<p>
+&nbsp;
+</p>
+
+
+<hr size="2" width="100%" /><h2>
+<i><b>3) Tableau de pointeurs</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Transformez le tableau de 5 testeurs en tableau de 5 pointeurs de testeurs. Corrigez toutes les fonctions affectées.
+</p>
+<ul><i>
+  <li>La déclaration d'un tableau de cinq pointeurs de testeurs s'écrit : Testeur * testeurs_[5] ;</li>
+  <li>Ajoutez une méthode <i>Boucle::init()</i> pour mettre à 0 tous les pointeurs du tableau.</li>
+  <li>L'ancienne méthode de copie de testeur doit être remplacée par une méthode de copie d'adresse de pointeur, qui pourrait prendre la forme : void enregistre( int position, Testeur * testeur ) {...}</li>
+  <li>La méthode <i>Boucle::execute()</i> ne doit considérer que les adresses du tableau qui sont non nulles.</li>
+</i></ul>
+<pre>
+int main()
+ {
+  TesteurCoef&lt;unsigned short&gt; tc ;
+  TesteurSomme&lt;short&gt; ts ;
+  Boucle boucle ;
+  boucle.init() ;
+  boucle.enregistre(0,&amp;tc) ;
+  boucle.enregistre(1,&amp;ts) ;
+  boucle.execute(1000,1,8,1) ;
+  std::cout &lt;&lt; std::endl ;
+  return 0 ;
+ }
+</pre>
+<p>
+&nbsp;
+</p>
+<h2> </h2>
+<hr size="2" width="100%" />
+<h2><i><b>4) Simplification</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Supprimez l'argument <i>&quot;position&quot;</i> de la méthode <i>Boucle::enregistre()</i>. Enregistrer automatiquement la nouvelle adresse dans la première case nulle du tableau.
+</p>
+<ul>
+	<p>
+	<i>On peut améliorer simplement la méthode à l'aide d'une variable membre supplémentaire pour stocker l'indice de la dernière case utilisée, ou celle à venir.</i>
+	</p>
+</ul>
+<pre>
+int main()
+ {
+  TesteurCoef&lt;unsigned short&gt; tc ;
+  TesteurSomme&lt;short&gt; ts ;
+  Boucle boucle ;
+  boucle.init() ;
+  boucle.enregistre(&amp;tc) ;
+  boucle.enregistre(&amp;ts) ;
+  boucle.execute(1000,1,8,1) ;
+  std::cout &lt;&lt; std::endl ;
+  return 0 ;
+ }
+</pre>
+  <p>
+    &nbsp;
+  </p>
+  <h2> </h2>
+  <hr size="2" width="100%" />
+  <h2>
+    <i>
+      <b>5) Utilisation du tas</b>
+    </i>
+  </h2>
+  <p>
+    &nbsp;
+  </p>
+
+  <p>
+    Au lieu d'utiliser un tableau de taille fixe et de cinq éléments, créez dynamiquement dans <i>Boucle::init(...)</i> un tableau de taille variable, la taille étant passée en argument à <i>Boucle::init(...)</i>.
+  </p>
+  <ul>
+    <li>
+      <i>La déclaration d'un tableau dynamique, dont les éléments sont eux-même des pointeursde testeur, nécessite une double étoile :</i>
+    </li>
+    <pre>
+      Testeur * * testeurs ;
+    </pre>
+    <li>
+      <i>La création sur le tas d'un tableau de N éléments, ces éléments étant eux-même des pointeurs de testeur, s'écrit :</i>
+    </li>
+    <pre>
+      new Testeur * [N]
+    </pre>
+  </ul>
+  <p>
+    Lors de l'enregistrement d'un nouveau testeur, vérifiez que le tableau n'est pas déjà rempli. Si c'est le cas, appelez la fonction <i>echec(...)</i>.
+  </p>
+  <p>
+    Ajoutez aussi une fonction <i>Boucle::finalise(...)</i> qui rend au système la mémoire allouée au tableau, et qui doit être appelée en fin de <i>main(...)</i> :
+  </p>
+  <pre>
+    int main()
+    {
+    TesteurCoef&lt;unsigned short&gt; tc ;
+    TesteurSomme&lt;short&gt; ts ;
+    Boucle boucle ;
+    boucle.init(5) ;
+    boucle.enregistre(&amp;tc) ;
+    boucle.enregistre(&amp;ts) ;
+    boucle.execute(1000,1,8,1) ;
+    boucle.finalise() ;
+    std::cout &lt;&lt; std::endl ;
+    return 0 ;
+    }
+  </pre>
+  <p>
+    &nbsp;
+  </p>
+  <h2> </h2>
+  <hr size="2" width="100%" />
+  <h2>
+    <i>
+      <b>6) La juste taille</b>
+    </i>
+  </h2>
+  <p>
+    &nbsp;
+  </p>
+
+  <p>
+    Dans votre <i>main()</i>, vous n'utilisez que deux testeurs, donc réduisez à 2 le nombre de testeurs que vous réservez lors de l'appel à <i>Boucle::init(...)</i> :
+  </p>
+  <pre>
+    int main()
+    {
+    TesteurCoef&lt;unsigned short&gt; tc ;
+    TesteurSomme&lt;short&gt; ts ;
+    Boucle boucle ;
+    boucle.init(2) ;
+    boucle.enregistre(&amp;tc) ;
+    boucle.enregistre(&amp;ts) ;
+    boucle.execute(1000,1,8,1) ;
+    boucle.finalise() ;
+    std::cout &lt;&lt; std::endl ;
+    return 0 ;
+    }
+  </pre>
+  <p>
+    Ca s'éxécute toujours correctement ?
+  </p>
+  <p>
+&nbsp;
+</p>

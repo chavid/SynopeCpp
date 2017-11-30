@@ -1,0 +1,171 @@
+<p>
+Enfin, les deux fonctionnalités qui font de C++ un langage "plus qu'objet". Aucune des modifications effectuées dans cette page n'est censée modifier les affichages du programme. Il est conseillé de partir du fichier <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp3_heritage_polymorphisme.cpp">tp3_heritage_polymorphisme.cpp</a>. Si vous êtes sous linux, vous pouvez utilisez le script <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp3_heritage_polymorphisme.sh">tp3_heritage_polymorphisme.sh</a> qui va compiler le programme, l'éxécuter et finalement signaler si ses affichages ont été modifiés. Accès à la <a href="/?q=node/130">section théorique correspondante</a>.</p>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><i><b>1) operator*</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Transformez la méthode <i>multiplie(...)</i> de la classe <i>Coef</i> en opérateur de multiplication.
+</p>
+<ul><i>
+  <li>L'opérateur de multiplication s'appelle <i>&quot;operator*&quot;</i>.</li>
+</i></ul>
+<p>
+Corrigez les méthodes <i>teste(...)</i>.
+</p>
+<ul><i>
+  <li>Quand une classe est dotée de cet opérateur, on peut écrire <i>&quot;obj1 * obj2&quot;</i> comme on le fait avec les types prédéfinis.</li>
+</i></ul>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><i><b>2) operator=</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Transformez la méthode <i>approxime</i> de la classe <i>Coef</i> en opérateur d'affectation.
+</p>
+<ul>
+	<p>
+	<i>L'opérateur d'affectation s'appelle <i>&quot;operator=&quot;</i>.</i>
+	</p>
+</ul>
+<p>
+Corrigez les méthodes <i>teste</i>.
+</p>
+<ul>
+	<p>
+	<i>Quand une classe est dotée de cet opérateur, on peut écrire <i>&quot;obj1 = ...&quot;</i> comme on le fait avec les types prédéfinis.</i>
+</ul>
+
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><i><b>3) Coef&lt;int&gt;</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Le type entier utilisé pour l'attribut <i>numerateur_</i> de la classe <i>Coef</i> a été choisi arbitrairement. Faites-en un paramètre de la classe.
+</p>
+<ul><i><li>
+Il faut ajouter <i>&quot;template&lt;typename U&gt;&quot;</i> avant la definition de classe, et remplacer par <i>U</i> le type de <i>numerateur_</i>.
+</li></i></ul>
+<p>
+Corrigez les classes <i>TesteurCoef</i> et <i>TesteurSomme</i>.
+</p>
+<ul><i><li>
+A chaque utilisation de la classe <i>Coef</i>, il faut ajouter entre &lt;&gt; le nom de type à substituer à <i>U</i>.
+</li></i></ul>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><i><b>4) Ajustement de l'opérateur *</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p>
+On suppose que tous les entiers de notre simulation sont stockés avec une précision comparable. En particulier, les entiers de notre somme pondérée sont stockés de la même façon que les numérateurs de nos coefficients : dans la méthode <i>operator*</i> de la classe <i>Coef</i>, remplacez le type entier par le paramètre <i>U</i>.
+</p>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><i><b>5) TesteurCoef&lt;short&gt;</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p>
+On veut pouvoir tester la classe <i>Coef</i> avec des types entiers différents. Ajoutez un type paramétré aux classes <i>TesteurCoef</i> et <i>TesteurSomme</i>. Utilisez ce paramètre pour définir le type de leurs attributs.
+</p>
+<p>
+Corrigez le programme principal pour qu'il utilise le type entier <i>short</i>.
+</p>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><i><b>6) 1000000/1000000</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Que remarquez-vous à l'éxécution ? Corrigez le programme principal pour qu'il utilise le type <i>unsigned short</i> pour l'objet de type <i>TesteurCoef</i>.
+</p>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><i><b>7) Conversion en double</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Transformez la méthode <i>approximation</i> de la classe <i>Coef</i> en opérateur de conversion en <i><b>double</b></i>.
+</p>
+<ul>
+	<p>
+	<i>L'opérateur de conversion en <i><b>double</b></i> s'appelle <i>&quot;operator double&quot;</i>. Cet opérateur n'a pas de type de retour (on ne met rien).</i>
+	</p>
+</ul>
+<p>
+Corrigez les méthodes <i>teste</i>.
+</p>
+<ul>
+	<p>
+	<i>Quand une classe est dotée de cet opérateur, On peut passer un objet de cette classe en argument à une fonction qui s'attend à recevoir un <i><b>double</b></i>.</i>
+	</p>
+</ul>
+
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><i><b>*) Question Bonus</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Transformez la méthode <i>execute(...)</i> de la classe <i>Testeur</i> et de ses dérivées en opérateur d'éxécution.
+</p>
+<ul><i>
+	<li>L'opérateur d'éxécution s'appelle <i>&quot;operator()&quot;</i>. Lors de sa définition, on a donc deux paires de parenthèses successives.</li>
+</i></ul>
+<p>
+Corrigez la fonction <i>boucle(...)</i>.
+</p>
+<ul><i>
+	<li>Un objet dont la classe possède un opérateur d'éxécution peut être utilisé comme si il était une fonction : <i>&quot;obj(...) ;&quot;</i>.</li>
+</i></ul>
+
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><i><b>*) Diagramme de classes UML de la solution</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p align="center">
+<img src="/?q=system/files/modele_operateurs_templates.jpg" alt="Diagramme de classes UML" /> 
+</p>
+<p>
+&nbsp;
+</p>

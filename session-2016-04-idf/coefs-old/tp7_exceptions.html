@@ -1,0 +1,28 @@
+<p>Accès à la <a href="/?q=node/133">section théorique correspondante</a>. Il est conseillé de partir du fichier <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp6_static_const.cpp">tp6_static_const.cpp</a>. Si vous êtes sous linux, vous pouvez utilisez le script <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp6_static_const.sh">tp6_static_const.sh</a> qui va compiler le programme, l'éxécuter et vérifier que l'affichage ne change pas. 
+<p>&nbsp;</p>
+
+
+<hr size="2" width="100%" />
+<h2><i><b>1) Création d'une classe pour les exceptions</b></i></h2>
+<p>&nbsp;</p>
+<p>
+Remplacez la fonction <i>echec(...)</i> par une classe <i>Echec</i>, qui se construit à partir d'un entier et d'une <i>std::string</i>, et qui fournit des fonctions pour lire ces valeurs. Partout où l'on appellait la fonction <i>echec(...)</i>, lancez une exception à la place. Dans la fonction <i>main(...)</i>, placez les instructions dans un bloc <i>try</i> et ajoutez une clause <i>catch</i> qui attrape les exceptions de type <i>Echec</i> et affiche leur contenu, comme le faisait l'ancienne fonction <i>echec(...)</i>.
+</p>
+<ul><i>
+  <li>Pour verifier qu'une exception est bien levée puis attrapée, remplacez l'appel à Testeur::init(5) en début de main(...) par un appel à Testeur::init(1). Une fois que le bon fonctionnement est démontré, remettre l'appel original à Testeur::init(5).</li>
+</i></ul>
+<p>&nbsp;</p>
+
+
+<hr size="2" width="100%" />
+<h2><i><b>2) Poursuivre l'éxécution malgré une exception</b></i></h2>
+<p>&nbsp;</p>
+<p>
+Ajoutez des blocs <i>try</i> et <i>catch</i> dans la fonction <i>boucle(...)</i>, de telle sorte que lorsqu'une exception est émise dans l'un des testeurs, l'éxécution puisse reprendre normalement pour les autres testeurs.
+</p>
+<ul><i>
+  <li>Pour verifier que l'objectif est atteint : dans la fonction TesteurCoef::execute(...), remplacez l'appel à teste(bits,0.65) par un appel à teste(bits,0). Une fois que le bon fonctionnement est démontré, remettre l'appel original à teste(bits,0.65).</li>
+</i></ul>
+<p>&nbsp;</p>
+
+

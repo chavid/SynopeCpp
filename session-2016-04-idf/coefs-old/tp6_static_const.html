@@ -1,0 +1,169 @@
+<p>Accès à la <a href="/?q=node/132">section théorique correspondante</a>. Il est conseillé de partir du fichier <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp5_pointeurs.cpp">tp5_pointeurs.cpp</a>. Si vous êtes sous linux, vous pouvez utilisez le script <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp5_pointeurs.sh">tp5_pointeurs.sh</a> qui va compiler le programme, l'éxécuter et vérifier que l'affichage ne change pas. 
+<p>&nbsp;</p>
+
+
+<hr size="2" width="100%" />
+<h2><i><b>1) Variables membres statiques</b></i></h2>
+<p>&nbsp;</p>
+<p>Rendez statiques les variables membres de la classe <i>Boucle</i>.</p>
+<p>&nbsp;</p>
+
+
+<hr size="2" width="100%" />
+<h2><i><b>2) Fonctions membres statiques</b></i></h2>
+<p>&nbsp;</p>
+<p>Rendez statiques toutes les fonctions membres de la classe <i>Boucle</i>. Dans la fonction <i>main(...)</i>, supprimez l'objet de type <i>Boucle</i> et appelez directement les fonctions statiques à l'aide de l'opérateur de portée de classe <i>Boucle::</i>.</li></p>
+<p>&nbsp;</p>
+
+
+<hr size="2" width="100%" />
+<h2><i><b>3) Constructeurs de testeurs</b></i></h2>
+<p>&nbsp;</p>
+<p>
+On estime que le choix de la résolution du calcul d'erreur est propre à chaque testeur, et ne devrait pas être décidé au niveau de la boucle. Ajoutez à <i>TesteurCoef</i> et <i>TesteurSomme</i> un constructeur qui prend en argument la résolution attribuée à ce testeur, puis retirez cet argument à <i>Boucle::execute(...)</i> et corrigez en conséquence le reste du programme. La fonction <i>main(...)</i> doit devenir :
+</p>
+<pre>
+int main()
+ {
+  TesteurCoef&lt;unsigned short&gt; tc(100) ;
+  TesteurSomme&lt;short&gt; ts(1000) ;
+  Boucle::init(5) ;
+  Boucle::enregistre(&amp;tc) ;
+  Boucle::enregistre(&amp;ts) ;
+  Boucle::execute(1,8,1) ;
+  Boucle::finalise() ;
+  std::cout &lt;&lt; std::endl ;
+  return 0 ;
+ }
+</pre>
+<p>&nbsp;</p>
+
+
+
+<hr size="2" width="100%" />
+<h2><i><b>4) Constructeur de base</b></i></h2>
+<p>&nbsp;</p>
+<p>
+Transformez <i>Testeur::init(...)</i> en constructeur, et corrigez le reste du programme en conséquence.
+</p>
+<p>&nbsp;</p>
+
+
+<hr size="2" width="100%" />
+<h2><i><b>5) Déplacement des membres statiques</b></i></h2>
+<p>&nbsp;</p>
+<p>Enlevez les attributs et méthodes statiques (sauf <i>execute()</i>) de la classe Boucle et placez les dans la classe Testeur.</p>
+<ul><i>
+  <li>La fonction Boucle::execute(...) n'a plus d'accès direct à la liste des testeurs : il faut ajouter à la classe Testeur deux méthodes : l'une pour lire le nombre de testeurs enregistrés, l'autre pour récupérer l'adresse du énième testeur. Ceci afin de pouvoir écrire :</li>
+</i>
+<pre>
+class Boucle
+ {
+  public :
+    static void execute( int deb, int fin, int inc )
+     {
+      for ( unsigned int i=0 ; i&lt;Testeur::nb_testeurs() ; ++i )
+       {
+        std::cout&lt;&lt;std::endl ;
+        for ( int bits = deb ; bits &lt;= fin ; bits = bits + inc )
+         { Testeur::testeur(i)->execute(bits) ; }
+       }
+     }
+ } ;
+</pre>
+
+</ul>
+<p>&nbsp;</p>
+
+
+<hr size="2" width="100%" />
+<h2><i><b>6) Rewind</b></i></h2>
+<p>&nbsp;</p>
+<p>Retransformez la classe <i>Boucle</i> en simple fonction <i>boucle(...)</i>.</p>
+<p>&nbsp;</p>
+
+
+<hr size="2" width="100%" />
+<h2><i><b>7) Coefs de taille fixe</b></i></h2>
+<p>&nbsp;</p>
+<p>
+Transformez la méthode <i>Coef::init()</i> en constructeur. 
+</p>
+<ul><i>
+  <li>Le nombre de bits alloués à une instance de Coef est fixé à la construction et ne peut plus varier. De ce fait, un tel objet ne peut plus être réutilisé en changeant à chaque fois le nombre de bits, comme le font actuellement les testeurs. Il faut supprimer les variables membres de type Coef des testeurs, et les remplacer par des objets temporaires, recréés à chaque fois qu'on éxécute les tests pour un nouveau nombre de bits.</li>
+</i></ul>
+<p>&nbsp;</p>
+
+
+<hr size="2" width="100%" />
+<h2><i><b>8) Auto-enregistrement des testeurs</b></i></h2>
+<p>&nbsp;</p>
+<p>Faites en sorte que tout nouveau testeur créé soit automatiquement enregistré dans le tableau statique des testeurs.</p>
+<ul><i>
+  <li>Rappel : la variable "this" contient toujours l'adresse de l'objet courant.</li>
+</i></ul>
+<pre>
+int main()
+ {
+  Testeur::init(5) ;
+  TesteurCoef&lt;unsigned short&gt; tc(100) ;
+  TesteurSomme&lt;short&gt; ts(1000) ;
+  boucle(1,8,1) ;
+  Testeur::finalise() ;
+  std::cout &lt;&lt; std::endl ;           
+  return 0 ;
+ }
+</pre>
+<p>&nbsp;</p>
+
+
+<hr size="2" width="100%" />
+<h2><i><b>9) Variable membre constante</b></i></h2>
+<p>&nbsp;</p>
+<p>Tranformez <i>Coef::bits_</i> et <i>Testeur::resolution_</i> en attributs constants.</p>
+<p>&nbsp;</p>
+
+
+<hr size="2" width="100%" />
+<h2><i><b>10) Argument et fonctions membres constants</b></i></h2>
+<p>&nbsp;</p>
+<p>
+Ajoutez la fonction ci-dessous, et modifiez le reste du programme pour qu'il compile correctement.
+</p>
+<pre>
+void affiche( Coef&lt;short&gt; const &amp; c )
+ { std::cout &lt;&lt; c.numerateur() &lt;&lt; &quot;/2^&quot; &lt;&lt; c.exposant() ; }
+</pre>
+<p>
+&nbsp;
+</p>
+
+<hr size="2" width="100%" />
+<h2><i><b>*) Question bonus</b></i></h2>
+<p>&nbsp;</p>
+<p>
+Transformez la partie statique de <i>Testeur</i> pour stocker des pointeurs vers des testeurs constants :
+</p>
+<pre>
+class Testeur
+ {
+  ...
+    static Testeur const * * testeurs__ ;
+  ...
+ } ;
+</pre>
+<p>
+Corrigez le reste du code en conséquence :
+<ul>
+<li><i>Testeur::init(...)</i> doit créer un tableau de pointeurs de testeurs constants.</li>
+<li><i>Testeur::testeur(...)</i> doit retourner un pointeur de testeur constant.</li>
+<li><i>boucle(...)</i> doit manipuler des testeurs constants.</li>
+<li><i>TesteurCoef::teste(...)</i> et <i>TesteurSomme::teste(...)</i> doivent être constantes.</li>
+<li><i>Testeur::erreur(...)</i> doit être constante.</li>
+</ul>
+</p>
+<p>
+&nbsp;
+</p>
+
+

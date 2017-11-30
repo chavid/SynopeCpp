@@ -1,0 +1,69 @@
+<p>
+Maintenant, les concepts qui font de C++ un langage "orienté objet". Il est conseillé de partir du fichier <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp2_classes_objets.cpp">tp2_classes_objets.cpp</a>. Si vous êtes sous linux, vous pouvez utilisez le script <a href="http://llrforge.in2p3.fr/~chamont/svn/DebuterEnCpp/tp2_classes_objets.sh">tp2_classes_objets.sh</a> qui va compiler le programme, l'éxécuter et finalement signaler si ses affichages ont été modifiés. Accès à la <a href="/?q=node/129">section théorique correspondante</a>.</p>
+<p>&nbsp;</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>1) Création du Testeur de base</a></i></b></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Ecrivez la classe <i>Testeur</i>, chargée de gérer le calcul d'erreur de tous les testeurs. Ses membres sont les suivants :
+</p>
+<ul>
+	<li>un attribut privé <i>resolution_</i> correspondant à la précision d'affichage du taux d'erreur ;</li>
+	<li>une méthode publique <i>init</i> avec un argument dont la valeur est recopiée dans <i>resolution_</i> ;</li>
+	<li>une méthode publique <i>erreur</i>, copie conforme de la fonction de même nom mis à part qu'elle utilise l'attribut <i>resolution_</i> au lieu d'un argument.</li>
+</ul>
+<p>
+Supprimez l'ancienne fonction <i>erreur</i>. Faites hériter <i>TesteurCoef</i> et <i>TesteurSomme</i> de la classe <i>Testeur</i>. Corrigez les méthodes <i>teste</i> et ajoutez dans le programme principal l'initialisation de l'indice maximum de  chaque testeur utilisé.
+</p>
+<p>&nbsp;</p>
+
+<hr size="2" width="100%" />
+<h2><i><b>2) Utilisation du Testeur</b></i></h2>
+<p>
+&nbsp;
+</p>
+<p>
+Ecrivez une nouvelle fonction <i>boucle</i>, dont les arguments sont un objet de type <i>Testeur</i>, la résolution, un nombre de bits initial, un nombre final et un incrément. La fonction doit afficher un saut de ligne puis initialiser la résolution du testeur et exécuter ce dernier pour la série de nombre de bits donnée en arguments (ce que fait actuellement le programme principal).
+</p>
+<ul><i>
+<li>Le testeur doit être passé à la fonction par référence.</li>
+<li>La classe <i>Testeur</i> doit être dotée d'une méthode <i>execute(...)</i> virtuelle.</li>
+</i></ul>
+<p>
+Remplacez les boucles du programme principal par des appels à la fonction <i>boucle</i>. Pour l'appel concernant un objet de type <i>TesteurCoef</i>, demandez une résolution de 1000000 et un nombre de bits allant de 4 à 16 par pas de 4. Le <i>main(...)</i> final est :
+</p>
+<pre>
+int main()
+ {
+  TesteurCoef tc ;
+  TesteurSomme ts ;
+  boucle(tc,1000000,4,16,4) ;
+  boucle(ts,1000,1,8,1) ;
+  std::cout &lt;&lt; std::endl ;
+  return 0 ;
+ }
+</pre>
+<p>&nbsp;</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>*) Question Bonus</i></b></h2>
+<p>&nbsp;</p>
+<p>
+Le compilateur traite un fichier de haut en bas. A chaque fois qu'un type, une classe, une fonction est utilisée, il faut qu'elle est été définie avant, c'est à dire plus haut dans le fichier.
+</p>
+<p>
+Pour chacune des classes et fonctions de votre programme, essayez de les remonter le plus haut possible dans le fichier, jusqu'à obtenir un ordonnancement idéal, commençant par les fonctions/classes les plus réutilisées, et finissant par les fonctions/classes qui utilisent le plus les autres.
+</p>
+<p>&nbsp;</p>
+
+<hr size="2" width="100%" />
+<h2><b><i>*) Diagramme de classes UML de la solution</i></b></h2>
+<p>&nbsp;</p>
+<p align="center">
+<img src="/?q=system/files/modele_heritage_polymorphisme.jpg" alt="Diagramme de classes UML" /> 
+</p>
+<p>&nbsp;</p>
+
