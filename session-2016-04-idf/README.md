@@ -4,7 +4,7 @@ Où l'on essaie d'entrer en contact avec les grands principes du langage, sans e
 
   - [Introduction](TheorieIntroduction.md)
   - [Programmation procédurale](TheorieClassique.md)
-  - [Programmation orientée objet](TheorieObjets "wikilink")
+  - [Programmation orientée objet](/../TheorieObjets)
   - [Exceptions & opérateurs](TheorieExceptionsOperateurs "wikilink")
   - [Programmation générique](TheorieGenerique "wikilink")
   - [Bonnes pratiques & bibliothèque standard](TheorieBonnesPratiquesBiblio "wikilink")
