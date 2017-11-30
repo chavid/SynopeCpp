@@ -1,4 +1,4 @@
-# [Programmation générique](README.md.md)
+# [Programmation générique](README.md)
 
 Scott Meyers : *Les patrons C++ ont d'abord été imaginés pour permettre la création de conteneurs d'objets de même type tels que vector, list et map. Mais plus les gens travaillaient avec les patrons, plus ils découvraient la variété de ses utilisations possibles. Les conteneurs étaient déjà appréciables, mais encore meilleure était la programmation générique, c'est à dire la possibilité d'écrire du code indépendant du type des objets manipulés. Les algorithmes STL tels que for\_each, find et merge sont des exemples de ce genre de programmation. Finalement, on découvrit que le mécanisme des patrons de C++ est complet au sens de Turing : il peut être utilisé pour calculer tout ce qui est calculable. Cela a conduit à la métaprogrammation à base de patrons : des programmes qui s'éxécutent pendant la compilation et qui s'arrêtent quand la compilation est terminée. Aujourd'hui, les conteneurs ne sont plus que la petite partie émergée des patrons.*
 

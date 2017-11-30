@@ -1,4 +1,4 @@
-# [TP : Opérateurs & Templates](README.md.md) \[\#license ©\]
+# [TP : Opérateurs & Templates](README.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 

@@ -1,4 +1,4 @@
-# [TP Coefs : Programmation Procédurale](README.md.md)
+# [TP Coefs : Programmation Procédurale](README.md)
 
 Tout nombre réel peut être approximé par le rapport entre deux nombres entiers. Pour simplifier les éventuels calculs, on décide que l'entier au dénominateur sera une puissance de deux. En effet, la multiplication ou la division d'un entier par une puissance de deux se réalise simplement en décalant les bits de l'entier vers la gauche ou vers la droite.
 

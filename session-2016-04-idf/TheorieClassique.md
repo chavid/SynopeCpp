@@ -1,4 +1,4 @@
-# [Programmation procédurale](README.md.md)
+# [Programmation procédurale](README.md)
 
 * [Variables, initialisation, affectation.](TheorieClassiqueVariables.md)
 * [Types prédéfinis.](TheorieClassiqueTypes.md)

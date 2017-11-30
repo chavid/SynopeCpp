@@ -1,4 +1,4 @@
-# [Conclusion](README.md.md)
+# [Conclusion](README.md)
 
 ## Morale
 

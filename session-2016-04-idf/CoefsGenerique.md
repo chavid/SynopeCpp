@@ -1,4 +1,4 @@
-# [TP Coefs : Programmation Générique](README.md.md)
+# [TP Coefs : Programmation Générique](README.md)
 
 \_\_FORCETOC\_\_
 

@@ -1,4 +1,4 @@
-# [TP : Mi-Parcours](README.md.md) \[\#license ©\]
+# [TP : Mi-Parcours](README.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 

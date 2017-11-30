@@ -1,4 +1,4 @@
-# [Nouvelles règles de codage](README.md.md)
+# [Nouvelles règles de codage](README.md)
 
 L'automne dernier, Bjarne Stroustrup (créateur de C++) et Herb Sutter (responsable du comité de normalisation) ont officialisé un projet de règles de codage, destiné à faciliter l'adoption du C++ "moderne" et la diffusion de bonnes pratiques établies avec quelques experts.
 

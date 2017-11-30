@@ -1,4 +1,4 @@
-# [TP : Classes & Objets](README.md.md)
+# [TP : Classes & Objets](README.md)
 
 \_\_FORCETOC\_\_
 

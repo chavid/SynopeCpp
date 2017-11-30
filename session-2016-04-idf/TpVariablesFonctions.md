@@ -1,4 +1,4 @@
-# [TP : Variables & Fonctions](README.md.md) \[\#license ©\]
+# [TP : Variables & Fonctions](README.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 

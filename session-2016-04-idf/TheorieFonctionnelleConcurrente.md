@@ -1,4 +1,4 @@
-# [Programmation fonctionnelle et concurrente](README.md.md)
+# [Programmation fonctionnelle et concurrente](README.md)
 
 ## Introduction
 

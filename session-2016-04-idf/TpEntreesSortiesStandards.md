@@ -1,4 +1,4 @@
-# [TP : Entrées/Sorties Standards](README.md.md) \[\#license ©\]
+# [TP : Entrées/Sorties Standards](README.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 

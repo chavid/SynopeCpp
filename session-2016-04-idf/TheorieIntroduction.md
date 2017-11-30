@@ -1,4 +1,4 @@
-# [Introduction](README.md.md)
+# [Introduction](README.md)
 
 ## Auteurs
 

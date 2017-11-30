@@ -1,4 +1,4 @@
-# [Programmation orientée objet](README.md.md)
+# [Programmation orientée objet](README.md)
 
   - [Classes & objets](TheorieClassesObjets.md) *[(questions 1 à 8)](CoefsObjets.md)*
   - [Héritage & polymorphisme](TheorieHeritagePolymorphisme.md) *[(questions 9 à 16)](CoefsObjets#a9Cr%C3%A9ationduTesteurdebase.md)*

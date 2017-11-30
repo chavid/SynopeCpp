@@ -1,4 +1,4 @@
-# [TP : Standard Template Library](README.md.md) \[\#license ©\]
+# [TP : Standard Template Library](README.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 

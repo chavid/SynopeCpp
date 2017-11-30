@@ -1,4 +1,4 @@
-# [Le titre général](README.md.md) \[\#license ©\]
+# [Le titre général](README.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 

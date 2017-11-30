@@ -1,4 +1,4 @@
-# [TP : Exceptions](README.md.md) \[\#license ©\]
+# [TP : Exceptions](README.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 

@@ -1,4 +1,4 @@
-# [TP Coefs : Programmation fonctionnelle et concurrente](README.md.md)
+# [TP Coefs : Programmation fonctionnelle et concurrente](README.md)
 
 \_\_FORCETOC\_\_
 

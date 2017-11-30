@@ -1,4 +1,4 @@
-# [TP : Tableaux, Pointeurs & Gestion du Tas](README.md.md) \[\#license ©\]
+# [TP : Tableaux, Pointeurs & Gestion du Tas](README.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 

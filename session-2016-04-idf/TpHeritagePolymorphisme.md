@@ -1,4 +1,4 @@
-# [TP : Héritage & Polymorphisme](README.md.md) \[\#license ©\]
+# [TP : Héritage & Polymorphisme](README.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 

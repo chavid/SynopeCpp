@@ -1,4 +1,4 @@
-# [Exceptions & opérateurs](README.md.md)
+# [Exceptions & opérateurs](README.md)
 
   - [Exceptions](ComplementExceptions.md) *[(questions 1 à 2)](CoefsExceptionsOperateurs.md)*
   - [Opérateurs](FondamentauxOperateurs.md) *[(questions 3 à 8)](CoefsExceptionsOperateurs#a3operator.md)*

@@ -1,4 +1,4 @@
-# [TP Coefs : Exceptions & Opérateurs](README.md.md)
+# [TP Coefs : Exceptions & Opérateurs](README.md)
 
 \_\_FORCETOC\_\_
 

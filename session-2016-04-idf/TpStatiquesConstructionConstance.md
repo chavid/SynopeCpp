@@ -1,4 +1,4 @@
-# [TP : Statiques, Construction & Constantes](README.md.md) \[\#license ©\]
+# [TP : Statiques, Construction & Constantes](README.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 

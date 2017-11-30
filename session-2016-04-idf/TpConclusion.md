@@ -1,4 +1,4 @@
-# [TP : Conclusion](README.md.md) \[\#license ©\]
+# [TP : Conclusion](README.md) \[\#license ©\]
 
 \_\_FORCETOC\_\_
 

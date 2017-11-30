@@ -1,4 +1,4 @@
-# [Bonnes pratiques & bibliothèque standard](README.md.md)
+# [Bonnes pratiques & bibliothèque standard](README.md)
 
 ## C++ Historique
 

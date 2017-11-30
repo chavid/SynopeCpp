@@ -1,4 +1,4 @@
-# [TP Coefs : Programmation Orientée Objet](README.md.md)
+# [TP Coefs : Programmation Orientée Objet](README.md)
 
 \_\_FORCETOC\_\_
 

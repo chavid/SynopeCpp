@@ -1,4 +1,4 @@
-# [TP Coefs : Bonnes pratiques & bibliothèque standard](README.md.md)
+# [TP Coefs : Bonnes pratiques & bibliothèque standard](README.md)
 
 \_\_FORCETOC\_\_
 
