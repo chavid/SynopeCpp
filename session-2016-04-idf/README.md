@@ -2,8 +2,8 @@
 
 Où l'on essaie d'entrer en contact avec les grands principes du langage, sans entrer dans les détails syntaxiques et sans être exhaustif, mais avec la volonté de bien comprendre les mécanismes à l'oeuvre.
 
-  - [Introduction](TheorieIntroduction.md "wikilink")
-  - [Programmation procédurale](TheorieClassique)
+  - [Introduction](TheorieIntroduction.md)
+  - [Programmation procédurale](TheorieClassique.md)
   - [Programmation orientée objet](TheorieObjets "wikilink")
   - [Exceptions & opérateurs](TheorieExceptionsOperateurs "wikilink")
   - [Programmation générique](TheorieGenerique "wikilink")
